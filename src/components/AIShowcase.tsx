@@ -1,86 +1,77 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Sparkles, Zap, Shield, TrendingUp } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 const AIShowcase = () => {
-  const capabilities = [
+  const steps = [
     {
-      icon: <Sparkles className="w-6 h-6" />,
-      title: "Generative AI",
-      description: "Create content, code, and creative assets at scale"
+      number: "01",
+      title: "Listen & Understand",
+      description: "We begin by truly understanding your challenges, your people, and your vision for a better way of working."
     },
     {
-      icon: <Zap className="w-6 h-6" />,
-      title: "Process Automation",
-      description: "Streamline workflows with intelligent automation"
+      number: "02",
+      title: "Design with Care",
+      description: "Solutions are crafted with empathy, focusing on what will genuinely improve daily experiences."
     },
     {
-      icon: <Shield className="w-6 h-6" />,
-      title: "Predictive Analytics",
-      description: "Make data-driven decisions with ML insights"
+      number: "03",
+      title: "Build Thoughtfully",
+      description: "We develop with precision and care, ensuring every detail serves the people who will use it."
     },
     {
-      icon: <TrendingUp className="w-6 h-6" />,
-      title: "AI Strategy",
-      description: "Navigate the AI landscape with expert guidance"
+      number: "04",
+      title: "Support & Grow",
+      description: "Our relationship continues as partners, helping your solutions evolve with your needs."
     }
   ];
 
   return (
-    <section className="py-24 relative overflow-hidden">
-      {/* Background */}
-      <div className="absolute inset-0 bg-gradient-to-b from-card/30 to-background" />
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[600px] bg-primary/5 rounded-full blur-[200px]" />
+    <section id="process" className="py-32 relative overflow-hidden">
+      {/* Soft gradient background */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[500px] rounded-full bg-gradient-to-r from-accent/10 via-secondary/10 to-primary/10 blur-[100px]" />
       
       <div className="container mx-auto px-6 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-20 items-center">
           {/* Left Content */}
           <div>
-            <p className="text-primary text-sm uppercase tracking-widest mb-4">AI Powered</p>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-              AI-centered services
+            <p className="text-primary text-sm tracking-widest mb-6 uppercase">Our Process</p>
+            <h2 className="font-display text-4xl md:text-5xl text-foreground mb-6">
+              A gentle approach
               <br />
-              <span className="gradient-text">for that AI world</span>
+              <span className="font-display-light text-muted-foreground">to powerful results</span>
             </h2>
-            <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              We help organizations harness the power of artificial intelligence 
-              to drive innovation, efficiency, and competitive advantage in an 
-              increasingly AI-driven world.
+            <p className="text-lg text-muted-foreground mb-10 leading-relaxed">
+              We don't believe in aggressive timelines or overwhelming complexity. 
+              Our process is designed to feel natural, respectful of your time, 
+              and focused on lasting positive change.
             </p>
-            
-            <div className="flex flex-wrap gap-4 mb-10">
-              <span className="px-4 py-2 rounded-full bg-primary/10 text-primary border border-primary/20">
-                ChatGPT Integration
-              </span>
-              <span className="px-4 py-2 rounded-full bg-accent/10 text-accent border border-accent/20">
-                Custom LLMs
-              </span>
-              <span className="px-4 py-2 rounded-full bg-primary/10 text-primary border border-primary/20">
-                AI Agents
-              </span>
-            </div>
 
-            <Button className="bg-gradient-to-r from-primary to-accent text-primary-foreground hover:opacity-90 transition-opacity">
-              Explore AI Solutions
+            <Button className="bg-foreground text-background hover:bg-foreground/90 rounded-full px-8">
+              Begin Your Story
               <ArrowRight className="ml-2 w-4 h-4" />
             </Button>
           </div>
 
-          {/* Right - Capabilities Grid */}
-          <div className="grid grid-cols-2 gap-4">
-            {capabilities.map((cap, index) => (
+          {/* Right - Process Steps */}
+          <div className="space-y-6">
+            {steps.map((step, index) => (
               <div 
                 key={index}
-                className="glass-card p-6 hover:border-primary/30 transition-all duration-300 group"
+                className="soft-card p-8 hover:shadow-lg transition-all duration-500 group"
               >
-                <div className="p-3 rounded-xl bg-gradient-to-br from-primary/20 to-accent/20 text-primary w-fit mb-4">
-                  {cap.icon}
+                <div className="flex items-start gap-6">
+                  <span className="font-display text-3xl gradient-text">
+                    {step.number}
+                  </span>
+                  <div>
+                    <h3 className="font-display text-xl mb-2 text-foreground">
+                      {step.title}
+                    </h3>
+                    <p className="text-muted-foreground leading-relaxed">
+                      {step.description}
+                    </p>
+                  </div>
                 </div>
-                <h3 className="text-lg font-semibold mb-2 text-foreground group-hover:text-primary transition-colors">
-                  {cap.title}
-                </h3>
-                <p className="text-sm text-muted-foreground">
-                  {cap.description}
-                </p>
               </div>
             ))}
           </div>

@@ -1,71 +1,62 @@
-import { Linkedin, Twitter, Instagram, Youtube } from "lucide-react";
+import { Linkedin, Twitter, Instagram } from "lucide-react";
 
 const Footer = () => {
   const footerLinks = {
-    Services: [
-      "Design & UX",
-      "Engineering",
-      "AI Solutions",
-      "Mobile Development",
-      "Cloud & DevOps"
+    Solutions: [
+      "Wellbeing Automation",
+      "Intelligent Systems",
+      "Trusted Platforms",
+      "Team Empowerment"
     ],
     Company: [
       "About Us",
-      "Careers",
-      "Case Studies",
-      "Partners",
-      "Contact"
+      "Our Process",
+      "Stories",
+      "Careers"
     ],
     Resources: [
-      "Blog",
       "Insights",
-      "Whitepapers",
-      "Events",
-      "Newsletter"
-    ],
-    Legal: [
-      "Privacy Policy",
-      "Terms of Service",
-      "Cookie Policy",
-      "Security"
+      "Case Studies",
+      "Newsletter",
+      "Contact"
     ]
   };
 
   const socialLinks = [
-    { icon: <Linkedin className="w-5 h-5" />, href: "#" },
-    { icon: <Twitter className="w-5 h-5" />, href: "#" },
-    { icon: <Instagram className="w-5 h-5" />, href: "#" },
-    { icon: <Youtube className="w-5 h-5" />, href: "#" }
+    { icon: <Linkedin className="w-5 h-5" />, href: "#", label: "LinkedIn" },
+    { icon: <Twitter className="w-5 h-5" />, href: "#", label: "Twitter" },
+    { icon: <Instagram className="w-5 h-5" />, href: "#", label: "Instagram" }
   ];
 
   return (
-    <footer className="bg-card/80 border-t border-border/50">
-      <div className="container mx-auto px-6 py-16">
+    <footer className="bg-foreground text-background py-20">
+      <div className="container mx-auto px-6">
         {/* Main Footer Content */}
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-8 mb-12">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-12 mb-16">
           {/* Logo & Description */}
           <div className="col-span-2 md:col-span-1">
-            <a href="/" className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center">
-                <span className="text-background font-bold text-lg">Q</span>
+            <a href="/" className="flex items-center gap-3 mb-6">
+              <div className="w-10 h-10 rounded-full bg-gradient-to-br from-accent via-secondary to-primary flex items-center justify-center">
+                <span className="font-display text-foreground font-medium text-lg">D7</span>
               </div>
-              <span className="text-xl font-semibold text-foreground">Qubika</span>
+              <span className="font-display text-xl text-background">DOK7</span>
             </a>
-            <p className="text-sm text-muted-foreground leading-relaxed">
-              Amplifying human potential through world-class design, engineering, and AI.
+            <p className="text-background/70 leading-relaxed text-sm">
+              Technology that works quietly to improve people's lives. 
+              Human-centered automation you can trust.
             </p>
           </div>
 
           {/* Footer Links */}
           {Object.entries(footerLinks).map(([title, links]) => (
             <div key={title}>
-              <h4 className="font-semibold text-foreground mb-4">{title}</h4>
+              <h4 className="font-display text-background mb-6">{title}</h4>
               <ul className="space-y-3">
                 {links.map((link) => (
                   <li key={link}>
                     <a 
                       href="#"
-                      className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                      className="text-sm text-background/60 hover:text-background transition-colors"
                     >
                       {link}
                     </a>
@@ -77,9 +68,9 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-8 border-t border-border/50 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-sm text-muted-foreground">
-            © 2024 Qubika. All rights reserved.
+        <div className="pt-10 border-t border-background/10 flex flex-col md:flex-row items-center justify-between gap-6">
+          <p className="text-sm text-background/50">
+            © 2026 DOK7 Software Solutions. Made with care.
           </p>
 
           {/* Social Links */}
@@ -88,7 +79,8 @@ const Footer = () => {
               <a
                 key={index}
                 href={social.href}
-                className="p-2 rounded-lg bg-secondary text-muted-foreground hover:text-foreground hover:bg-primary/10 transition-all"
+                aria-label={social.label}
+                className="p-3 rounded-full bg-background/10 text-background/60 hover:text-background hover:bg-background/20 transition-all"
               >
                 {social.icon}
               </a>

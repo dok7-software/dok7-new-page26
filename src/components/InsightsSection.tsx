@@ -1,112 +1,81 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Clock, User } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 const InsightsSection = () => {
   const articles = [
     {
-      category: "AI & Technology",
-      title: "Implementing AI in today's world",
-      excerpt: "How organizations can successfully integrate artificial intelligence into their existing workflows and infrastructure.",
-      author: "Sarah Johnson",
-      readTime: "5 min read",
-      featured: true
+      category: "Wellbeing",
+      title: "The quiet revolution: automation that respects your time",
+      excerpt: "How thoughtful technology can give us back the moments that matter most in our lives.",
+      readTime: "4 min read"
     },
     {
-      category: "Engineering",
-      title: "The future of cloud-native development",
-      excerpt: "Exploring modern architecture patterns and best practices for building scalable applications.",
-      author: "Michael Chen",
-      readTime: "8 min read",
-      featured: false
+      category: "Human-Centered",
+      title: "Why empathy is our most important tool",
+      excerpt: "Building technology that truly serves people starts with understanding their lived experience.",
+      readTime: "6 min read"
     },
     {
-      category: "Design",
-      title: "Human-centered design in the age of AI",
-      excerpt: "Balancing automation with empathy to create meaningful user experiences.",
-      author: "Emily Rodriguez",
-      readTime: "6 min read",
-      featured: false
+      category: "Teams",
+      title: "Creating space for creativity in automated workflows",
+      excerpt: "When routine tasks handle themselves, teams discover new possibilities for innovation.",
+      readTime: "5 min read"
     }
   ];
 
   return (
-    <section className="py-24 relative overflow-hidden">
-      {/* Background */}
-      <div className="absolute inset-0 bg-card/50" />
+    <section className="py-32 relative overflow-hidden bg-muted/30">
+      {/* Soft shapes */}
+      <div className="absolute top-0 left-0 w-[250px] h-[250px] rounded-full bg-secondary/10 blur-[60px]" />
       
       <div className="container mx-auto px-6 relative z-10">
         {/* Section Header */}
-        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-8 mb-16">
+        <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 mb-16">
           <div>
-            <p className="text-primary text-sm uppercase tracking-widest mb-4">Blog</p>
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground">
-              Insights & Perspectives
+            <p className="text-primary text-sm tracking-widest mb-6 uppercase">Insights</p>
+            <h2 className="font-display text-4xl md:text-5xl text-foreground">
+              Thoughts on
+              <br />
+              <span className="font-display-light text-muted-foreground">technology that cares</span>
             </h2>
           </div>
           <Button 
             variant="outline" 
-            className="border-primary/50 text-primary hover:bg-primary/10 self-start md:self-auto"
+            className="border-foreground/20 text-foreground hover:bg-foreground/5 rounded-full self-start lg:self-auto"
           >
-            View All Articles
+            View All Insights
             <ArrowRight className="ml-2 w-4 h-4" />
           </Button>
         </div>
 
         {/* Articles Grid */}
-        <div className="grid lg:grid-cols-2 gap-6">
-          {/* Featured Article */}
-          <div className="glass-card p-8 hover:border-primary/30 transition-all duration-300 group cursor-pointer row-span-2">
-            <span className="inline-block px-3 py-1 text-xs rounded-full bg-primary/10 text-primary mb-6">
-              {articles[0].category}
-            </span>
-            
-            <h3 className="text-3xl font-bold mb-4 text-foreground group-hover:text-primary transition-colors">
-              {articles[0].title}
-            </h3>
-            <p className="text-muted-foreground mb-8 leading-relaxed text-lg">
-              {articles[0].excerpt}
-            </p>
-            
-            <div className="flex items-center gap-6 mt-auto">
-              <div className="flex items-center gap-2 text-muted-foreground">
-                <User className="w-4 h-4" />
-                <span className="text-sm">{articles[0].author}</span>
-              </div>
-              <div className="flex items-center gap-2 text-muted-foreground">
-                <Clock className="w-4 h-4" />
-                <span className="text-sm">{articles[0].readTime}</span>
-              </div>
-            </div>
-          </div>
-
-          {/* Other Articles */}
-          {articles.slice(1).map((article, index) => (
-            <div 
+        <div className="grid md:grid-cols-3 gap-8">
+          {articles.map((article, index) => (
+            <article 
               key={index}
-              className="glass-card p-6 hover:border-primary/30 transition-all duration-300 group cursor-pointer"
+              className="soft-card p-8 hover:shadow-lg transition-all duration-500 group cursor-pointer flex flex-col"
             >
-              <span className="inline-block px-3 py-1 text-xs rounded-full bg-primary/10 text-primary mb-4">
-                {article.category}
-              </span>
+              <div className="flex items-center justify-between mb-6">
+                <span className="text-sm text-primary">
+                  {article.category}
+                </span>
+                <span className="text-sm text-muted-foreground">
+                  {article.readTime}
+                </span>
+              </div>
               
-              <h3 className="text-xl font-semibold mb-3 text-foreground group-hover:text-primary transition-colors">
+              <h3 className="font-display text-xl mb-4 text-foreground group-hover:text-primary transition-colors leading-snug">
                 {article.title}
               </h3>
-              <p className="text-muted-foreground mb-6 leading-relaxed">
+              <p className="text-muted-foreground leading-relaxed flex-grow">
                 {article.excerpt}
               </p>
               
-              <div className="flex items-center gap-4">
-                <div className="flex items-center gap-2 text-muted-foreground">
-                  <User className="w-4 h-4" />
-                  <span className="text-sm">{article.author}</span>
-                </div>
-                <div className="flex items-center gap-2 text-muted-foreground">
-                  <Clock className="w-4 h-4" />
-                  <span className="text-sm">{article.readTime}</span>
-                </div>
+              <div className="mt-6 flex items-center text-foreground text-sm group-hover:text-primary transition-colors">
+                Read more
+                <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </div>
-            </div>
+            </article>
           ))}
         </div>
       </div>

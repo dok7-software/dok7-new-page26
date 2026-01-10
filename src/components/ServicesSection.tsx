@@ -1,57 +1,56 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Brain, Code, Palette, Smartphone } from "lucide-react";
+import { ArrowRight, Heart, Lightbulb, Shield, Users } from "lucide-react";
 
 const ServicesSection = () => {
   const services = [
     {
-      icon: <Palette className="w-8 h-8" />,
-      title: "Design & UX",
-      description: "Human-centered design that creates meaningful connections between users and products.",
-      tags: ["UX Research", "UI Design", "Prototyping", "Design Systems"]
+      icon: <Heart className="w-7 h-7" />,
+      title: "Wellbeing Automation",
+      description: "Systems that free people from repetitive tasks, giving them time for what matters most in their lives.",
+      color: "from-accent/40 to-accent/10"
     },
     {
-      icon: <Code className="w-8 h-8" />,
-      title: "Engineering",
-      description: "Robust, scalable software solutions built with modern technologies and best practices.",
-      tags: ["Web Development", "Cloud Architecture", "DevOps", "Quality Assurance"]
+      icon: <Lightbulb className="w-7 h-7" />,
+      title: "Intelligent Solutions",
+      description: "Smart technology that learns and adapts, always working quietly in the background to serve you better.",
+      color: "from-secondary/40 to-secondary/10"
     },
     {
-      icon: <Brain className="w-8 h-8" />,
-      title: "AI Solutions",
-      description: "Intelligent systems that learn, adapt, and deliver transformative business value.",
-      tags: ["Machine Learning", "NLP", "Computer Vision", "AI Strategy"]
+      icon: <Shield className="w-7 h-7" />,
+      title: "Trusted Systems",
+      description: "Secure, reliable platforms built with transparency and care for your data and peace of mind.",
+      color: "from-primary/40 to-primary/10"
     },
     {
-      icon: <Smartphone className="w-8 h-8" />,
-      title: "Mobile Apps",
-      description: "Native and cross-platform mobile experiences that users love.",
-      tags: ["iOS", "Android", "React Native", "Flutter"]
+      icon: <Users className="w-7 h-7" />,
+      title: "Team Empowerment",
+      description: "Tools that bring teams together, fostering collaboration and genuine human connection.",
+      color: "from-accent/30 via-secondary/20 to-primary/30"
     }
   ];
 
   return (
-    <section className="py-24 relative overflow-hidden">
-      {/* Background Effects */}
-      <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-primary/5 rounded-full blur-[150px]" />
+    <section id="solutions" className="py-32 relative overflow-hidden bg-muted/30">
+      {/* Soft organic shapes */}
+      <div className="absolute top-20 left-10 w-[300px] h-[300px] rounded-full bg-secondary/10 blur-[80px]" />
+      <div className="absolute bottom-20 right-10 w-[250px] h-[250px] rounded-full bg-accent/10 blur-[80px]" />
       
       <div className="container mx-auto px-6 relative z-10">
         {/* Section Header */}
-        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-8 mb-16">
-          <div>
-            <p className="text-primary text-sm uppercase tracking-widest mb-4">What We Do</p>
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground">
-              A services-first approach
+        <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 mb-16">
+          <div className="max-w-2xl">
+            <p className="text-primary text-sm tracking-widest mb-6 uppercase">What We Create</p>
+            <h2 className="font-display text-4xl md:text-5xl text-foreground mb-4">
+              Automation as
               <br />
-              <span className="text-muted-foreground">to any software you can dream of—</span>
-              <br />
-              <span className="gradient-text">now amplified by AI</span>
+              <span className="font-display-light text-muted-foreground">relief</span>
             </h2>
           </div>
           <Button 
             variant="outline" 
-            className="border-primary/50 text-primary hover:bg-primary/10 self-start md:self-auto"
+            className="border-foreground/20 text-foreground hover:bg-foreground/5 rounded-full self-start lg:self-auto"
           >
-            View All Services
+            Explore All Solutions
             <ArrowRight className="ml-2 w-4 h-4" />
           </Button>
         </div>
@@ -61,32 +60,21 @@ const ServicesSection = () => {
           {services.map((service, index) => (
             <div 
               key={index}
-              className="glass-card p-8 hover:border-primary/30 transition-all duration-300 group cursor-pointer"
+              className="soft-card p-10 hover:shadow-lg transition-all duration-500 group cursor-pointer"
             >
-              <div className="flex items-start justify-between mb-6">
-                <div className="p-3 rounded-xl bg-gradient-to-br from-primary/20 to-accent/20 text-primary">
+              <div className="flex items-start justify-between mb-8">
+                <div className={`p-4 rounded-2xl bg-gradient-to-br ${service.color} text-foreground`}>
                   {service.icon}
                 </div>
-                <ArrowRight className="w-5 h-5 text-muted-foreground group-hover:text-primary group-hover:translate-x-1 transition-all" />
+                <ArrowRight className="w-5 h-5 text-muted-foreground/50 group-hover:text-foreground group-hover:translate-x-1 transition-all duration-300" />
               </div>
               
-              <h3 className="text-2xl font-semibold mb-3 text-foreground group-hover:text-primary transition-colors">
+              <h3 className="font-display text-2xl mb-4 text-foreground">
                 {service.title}
               </h3>
-              <p className="text-muted-foreground mb-6 leading-relaxed">
+              <p className="text-muted-foreground leading-relaxed">
                 {service.description}
               </p>
-              
-              <div className="flex flex-wrap gap-2">
-                {service.tags.map((tag, tagIndex) => (
-                  <span 
-                    key={tagIndex}
-                    className="px-3 py-1 text-xs rounded-full bg-secondary text-muted-foreground"
-                  >
-                    {tag}
-                  </span>
-                ))}
-              </div>
             </div>
           ))}
         </div>
