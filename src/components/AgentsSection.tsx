@@ -1,93 +1,77 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Bot, Cpu, MessageSquare, Settings } from "lucide-react";
+import { ArrowRight, Clock, Smile, Sun } from "lucide-react";
 
 const AgentsSection = () => {
   return (
-    <section className="py-24 relative overflow-hidden">
-      {/* Background */}
-      <div className="absolute inset-0 bg-card/50" />
-      <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-accent/10 rounded-full blur-[150px]" />
+    <section className="py-32 relative overflow-hidden bg-muted/30">
+      {/* Soft organic background */}
+      <div className="absolute top-0 left-1/4 w-[400px] h-[400px] rounded-full bg-accent/15 blur-[100px] animate-float-gentle" />
+      <div className="absolute bottom-0 right-1/4 w-[350px] h-[350px] rounded-full bg-secondary/15 blur-[100px] animate-float-gentle" style={{ animationDelay: '3s' }} />
       
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <p className="text-primary text-sm uppercase tracking-widest mb-4">AI Products</p>
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-            Agents Factory
+          <p className="text-primary text-sm tracking-widest mb-6 uppercase">The DOK7 Promise</p>
+          <h2 className="font-display text-4xl md:text-5xl text-foreground mb-6">
+            Time back for
+            <br />
+            <span className="font-display-light text-muted-foreground">what matters</span>
           </h2>
-          <p className="text-lg text-muted-foreground leading-relaxed">
-            Build, deploy, and scale AI agents that automate complex workflows 
-            and deliver intelligent interactions at enterprise scale.
-          </p>
         </div>
 
-        {/* Product Showcase */}
-        <div className="glass-card p-8 md:p-12 mb-12">
+        {/* Main Feature Card */}
+        <div className="soft-card p-12 md:p-16 max-w-5xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <div className="flex items-center gap-3 mb-6">
-                <div className="p-3 rounded-xl bg-gradient-to-br from-primary to-accent">
-                  <Bot className="w-6 h-6 text-primary-foreground" />
-                </div>
-                <span className="text-sm text-primary uppercase tracking-widest">Featured Product</span>
-              </div>
-              
-              <h3 className="text-3xl font-bold mb-4 text-foreground">
-                Custom AI Agents for Enterprise
+              <h3 className="font-display text-3xl mb-6 text-foreground">
+                Reclaim your day
               </h3>
-              <p className="text-muted-foreground mb-6 leading-relaxed">
-                Deploy intelligent agents that understand your business context, 
-                integrate with your systems, and scale with your needs. From 
-                customer service to internal operations.
+              <p className="text-muted-foreground mb-8 leading-relaxed text-lg">
+                Imagine finishing work with energy to spare. Our automation solutions 
+                handle the repetitive, freeing you to focus on creativity, connection, 
+                and the work that truly fulfills you.
               </p>
               
-              <div className="flex flex-wrap gap-4 mb-8">
-                <div className="flex items-center gap-2 text-muted-foreground">
-                  <Cpu className="w-4 h-4 text-primary" />
-                  <span className="text-sm">Custom Training</span>
+              <div className="space-y-4 mb-10">
+                <div className="flex items-center gap-4 text-foreground">
+                  <div className="w-10 h-10 rounded-full bg-accent/20 flex items-center justify-center">
+                    <Clock className="w-5 h-5 text-foreground/70" />
+                  </div>
+                  <span>Save hours every week</span>
                 </div>
-                <div className="flex items-center gap-2 text-muted-foreground">
-                  <MessageSquare className="w-4 h-4 text-primary" />
-                  <span className="text-sm">Multi-channel</span>
+                <div className="flex items-center gap-4 text-foreground">
+                  <div className="w-10 h-10 rounded-full bg-secondary/20 flex items-center justify-center">
+                    <Smile className="w-5 h-5 text-foreground/70" />
+                  </div>
+                  <span>Reduce daily stress</span>
                 </div>
-                <div className="flex items-center gap-2 text-muted-foreground">
-                  <Settings className="w-4 h-4 text-primary" />
-                  <span className="text-sm">Full Integration</span>
+                <div className="flex items-center gap-4 text-foreground">
+                  <div className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center">
+                    <Sun className="w-5 h-5 text-foreground/70" />
+                  </div>
+                  <span>More time for life</span>
                 </div>
               </div>
 
-              <Button className="bg-gradient-to-r from-primary to-accent text-primary-foreground hover:opacity-90 transition-opacity">
-                Learn More
+              <Button className="bg-foreground text-background hover:bg-foreground/90 rounded-full px-8">
+                See How It Works
                 <ArrowRight className="ml-2 w-4 h-4" />
               </Button>
             </div>
 
-            {/* Visual Placeholder */}
-            <div className="relative">
-              <div className="aspect-square rounded-2xl bg-gradient-to-br from-primary/20 via-card to-accent/20 p-8 flex items-center justify-center border border-white/10">
-                <div className="w-32 h-32 rounded-full bg-gradient-to-br from-primary to-accent animate-pulse flex items-center justify-center">
-                  <Bot className="w-16 h-16 text-primary-foreground" />
-                </div>
-                {/* Orbiting elements */}
-                <div className="absolute inset-0 animate-spin" style={{ animationDuration: '20s' }}>
-                  <div className="absolute top-8 left-1/2 w-3 h-3 rounded-full bg-primary" />
-                </div>
-                <div className="absolute inset-0 animate-spin" style={{ animationDuration: '15s', animationDirection: 'reverse' }}>
-                  <div className="absolute bottom-12 right-8 w-2 h-2 rounded-full bg-accent" />
+            {/* Visual Element - Organic shapes */}
+            <div className="relative flex items-center justify-center">
+              <div className="w-64 h-64 rounded-full bg-gradient-to-br from-accent/30 via-secondary/20 to-primary/30 flex items-center justify-center animate-float-gentle">
+                <div className="w-48 h-48 rounded-full bg-card flex items-center justify-center shadow-lg">
+                  <div className="w-32 h-32 rounded-full bg-gradient-to-br from-accent via-secondary to-primary flex items-center justify-center">
+                    <span className="text-5xl">🌱</span>
+                  </div>
                 </div>
               </div>
+              {/* Decorative circles */}
+              <div className="absolute top-4 right-8 w-6 h-6 rounded-full bg-accent/40" />
+              <div className="absolute bottom-8 left-4 w-4 h-4 rounded-full bg-secondary/40" />
+              <div className="absolute top-1/2 right-0 w-3 h-3 rounded-full bg-primary/40" />
             </div>
-          </div>
-        </div>
-
-        {/* Partner Logos */}
-        <div className="text-center">
-          <p className="text-sm text-muted-foreground mb-6">Powered by leading AI platforms</p>
-          <div className="flex flex-wrap items-center justify-center gap-8 opacity-60">
-            {["OpenAI", "Azure", "AWS", "Google Cloud", "Anthropic"].map((partner) => (
-              <span key={partner} className="text-lg font-medium text-muted-foreground">
-                {partner}
-              </span>
-            ))}
           </div>
         </div>
       </div>

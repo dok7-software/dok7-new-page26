@@ -2,82 +2,77 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
 const CaseStudySection = () => {
-  const caseStudies = [
+  const stories = [
     {
-      company: "Shopify",
-      title: "Revolutionizing e-commerce with AI-powered recommendations",
-      tags: ["E-commerce", "AI", "Machine Learning"],
-      image: "linear-gradient(135deg, #96bf48 0%, #5e8e3e 100%)"
+      quote: "DOK7 didn't just build us software — they gave our team their evenings back.",
+      name: "Maria Santos",
+      role: "Operations Director",
+      company: "Sunrise Healthcare",
+      impact: "40% less time on admin tasks"
     },
     {
-      company: "Microsoft",
-      title: "Building next-gen productivity tools with intelligent automation",
-      tags: ["Enterprise", "Automation", "Cloud"],
-      image: "linear-gradient(135deg, #00a4ef 0%, #0078d4 100%)"
+      quote: "Finally, technology that feels like it was made by people who actually care.",
+      name: "James Chen",
+      role: "Founder",
+      company: "EduConnect",
+      impact: "Team satisfaction up 65%"
     },
     {
-      company: "Spotify",
-      title: "Enhancing music discovery through personalized AI experiences",
-      tags: ["Media", "Personalization", "UX"],
-      image: "linear-gradient(135deg, #1db954 0%, #191414 100%)"
+      quote: "The gentlest transformation we've ever experienced. And the most effective.",
+      name: "Anna Kowalski",
+      role: "CEO",
+      company: "Wellspring Wellness",
+      impact: "Serving 3x more clients"
     }
   ];
 
   return (
-    <section className="py-24 relative overflow-hidden">
-      {/* Background */}
-      <div className="absolute inset-0 bg-gradient-to-b from-background to-card/30" />
+    <section id="stories" className="py-32 relative overflow-hidden">
+      {/* Soft background */}
+      <div className="absolute top-1/2 right-0 w-[300px] h-[300px] rounded-full bg-accent/10 blur-[80px]" />
       
       <div className="container mx-auto px-6 relative z-10">
         {/* Section Header */}
-        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-8 mb-16">
-          <div>
-            <p className="text-primary text-sm uppercase tracking-widest mb-4">Our Work</p>
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground">
-              Trusted by industry leaders
+        <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 mb-16">
+          <div className="max-w-2xl">
+            <p className="text-primary text-sm tracking-widest mb-6 uppercase">Stories</p>
+            <h2 className="font-display text-4xl md:text-5xl text-foreground">
+              Real people,
+              <br />
+              <span className="font-display-light text-muted-foreground">real relief</span>
             </h2>
           </div>
           <Button 
             variant="outline" 
-            className="border-primary/50 text-primary hover:bg-primary/10 self-start md:self-auto"
+            className="border-foreground/20 text-foreground hover:bg-foreground/5 rounded-full self-start lg:self-auto"
           >
-            View All Case Studies
+            Read All Stories
             <ArrowRight className="ml-2 w-4 h-4" />
           </Button>
         </div>
 
-        {/* Case Studies Grid */}
-        <div className="grid md:grid-cols-3 gap-6">
-          {caseStudies.map((study, index) => (
+        {/* Stories Grid */}
+        <div className="grid md:grid-cols-3 gap-8">
+          {stories.map((story, index) => (
             <div 
               key={index}
-              className="group cursor-pointer"
+              className="soft-card p-10 hover:shadow-lg transition-all duration-500 group cursor-pointer flex flex-col"
             >
-              {/* Image */}
-              <div 
-                className="aspect-[4/3] rounded-2xl mb-6 flex items-end p-6 relative overflow-hidden"
-                style={{ background: study.image }}
-              >
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-                <span className="relative z-10 text-white font-bold text-2xl">
-                  {study.company}
-                </span>
+              {/* Quote */}
+              <p className="text-foreground text-xl leading-relaxed mb-8 flex-grow font-light">
+                "{story.quote}"
+              </p>
+              
+              {/* Impact Badge */}
+              <div className="inline-flex self-start px-4 py-2 rounded-full bg-gradient-to-r from-accent/20 via-secondary/15 to-primary/20 text-sm text-foreground mb-6">
+                {story.impact}
               </div>
 
-              {/* Content */}
-              <h3 className="text-xl font-semibold mb-3 text-foreground group-hover:text-primary transition-colors">
-                {study.title}
-              </h3>
-              
-              <div className="flex flex-wrap gap-2">
-                {study.tags.map((tag, tagIndex) => (
-                  <span 
-                    key={tagIndex}
-                    className="px-3 py-1 text-xs rounded-full bg-secondary text-muted-foreground"
-                  >
-                    {tag}
-                  </span>
-                ))}
+              {/* Author */}
+              <div>
+                <p className="font-display text-foreground mb-1">{story.name}</p>
+                <p className="text-muted-foreground text-sm">{story.role}</p>
+                <p className="text-muted-foreground/70 text-sm">{story.company}</p>
               </div>
             </div>
           ))}

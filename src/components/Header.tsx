@@ -1,52 +1,47 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X, ChevronDown } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navItems = [
-    { label: "Services", hasDropdown: true },
-    { label: "About", hasDropdown: true },
-    { label: "Insights", hasDropdown: true },
-    { label: "Industries", hasDropdown: true },
-    { label: "Careers", hasDropdown: false },
+    { label: "Solutions", href: "#solutions" },
+    { label: "About", href: "#about" },
+    { label: "Process", href: "#process" },
+    { label: "Stories", href: "#stories" },
+    { label: "Contact", href: "#contact" },
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-xl border-b border-border/50">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-sm">
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <a href="/" className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center">
-              <span className="text-background font-bold text-lg">Q</span>
+          <a href="/" className="flex items-center gap-3">
+            <div className="w-10 h-10 rounded-full bg-gradient-to-br from-accent via-secondary to-primary flex items-center justify-center">
+              <span className="font-display text-foreground font-medium text-lg">D7</span>
             </div>
-            <span className="text-xl font-semibold text-foreground">Qubika</span>
+            <span className="font-display text-xl text-foreground">DOK7</span>
           </a>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center gap-8">
+          <nav className="hidden lg:flex items-center gap-10">
             {navItems.map((item) => (
-              <button
+              <a
                 key={item.label}
-                className="flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground transition-colors"
+                href={item.href}
+                className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-300"
               >
                 {item.label}
-                {item.hasDropdown && <ChevronDown className="w-4 h-4" />}
-              </button>
+              </a>
             ))}
           </nav>
 
           {/* Desktop CTA */}
-          <div className="hidden lg:flex items-center gap-4">
-            <Button variant="ghost" className="text-muted-foreground hover:text-foreground">
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-              </svg>
-            </Button>
-            <Button className="bg-gradient-to-r from-primary to-accent text-primary-foreground hover:opacity-90 transition-opacity">
-              Get in Touch
+          <div className="hidden lg:block">
+            <Button className="bg-foreground text-background hover:bg-foreground/90 rounded-full px-6">
+              Let's Talk
             </Button>
           </div>
 
@@ -61,19 +56,20 @@ const Header = () => {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="lg:hidden py-6 border-t border-border/50">
+          <div className="lg:hidden py-8 border-t border-border">
             <nav className="flex flex-col gap-4">
               {navItems.map((item) => (
-                <button
+                <a
                   key={item.label}
-                  className="flex items-center justify-between py-2 text-muted-foreground hover:text-foreground transition-colors"
+                  href={item.href}
+                  className="py-2 text-muted-foreground hover:text-foreground transition-colors"
+                  onClick={() => setIsMenuOpen(false)}
                 >
                   {item.label}
-                  {item.hasDropdown && <ChevronDown className="w-4 h-4" />}
-                </button>
+                </a>
               ))}
-              <Button className="mt-4 bg-gradient-to-r from-primary to-accent text-primary-foreground">
-                Get in Touch
+              <Button className="mt-4 bg-foreground text-background rounded-full">
+                Let's Talk
               </Button>
             </nav>
           </div>
