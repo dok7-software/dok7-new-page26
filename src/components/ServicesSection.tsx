@@ -1,30 +1,33 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Heart, Lightbulb, Shield, Users } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const ServicesSection = () => {
+  const { t } = useTranslation();
+
   const services = [
     {
       icon: <Heart className="w-7 h-7" />,
-      title: "Wellbeing Automation",
-      description: "Systems that free people from repetitive tasks, giving them time for what matters most in their lives.",
+      titleKey: "services.items.wellbeing.title",
+      descriptionKey: "services.items.wellbeing.description",
       color: "from-accent/40 to-accent/10"
     },
     {
       icon: <Lightbulb className="w-7 h-7" />,
-      title: "Intelligent Solutions",
-      description: "Smart technology that learns and adapts, always working quietly in the background to serve you better.",
+      titleKey: "services.items.intelligent.title",
+      descriptionKey: "services.items.intelligent.description",
       color: "from-secondary/40 to-secondary/10"
     },
     {
       icon: <Shield className="w-7 h-7" />,
-      title: "Trusted Systems",
-      description: "Secure, reliable platforms built with transparency and care for your data and peace of mind.",
+      titleKey: "services.items.trusted.title",
+      descriptionKey: "services.items.trusted.description",
       color: "from-primary/40 to-primary/10"
     },
     {
       icon: <Users className="w-7 h-7" />,
-      title: "Team Empowerment",
-      description: "Tools that bring teams together, fostering collaboration and genuine human connection.",
+      titleKey: "services.items.team.title",
+      descriptionKey: "services.items.team.description",
       color: "from-accent/30 via-secondary/20 to-primary/30"
     }
   ];
@@ -39,18 +42,18 @@ const ServicesSection = () => {
         {/* Section Header */}
         <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 mb-16">
           <div className="max-w-2xl">
-            <p className="text-primary text-sm tracking-widest mb-6 uppercase">What We Create</p>
+            <p className="text-primary text-sm tracking-widest mb-6 uppercase">{t('services.label')}</p>
             <h2 className="font-display text-4xl md:text-5xl text-foreground mb-4">
-              Automation as
+              {t('services.headline')}
               <br />
-              <span className="font-display-light text-muted-foreground">relief</span>
+              <span className="font-display-light text-muted-foreground">{t('services.headlineLight')}</span>
             </h2>
           </div>
           <Button 
             variant="outline" 
             className="border-foreground/20 text-foreground hover:bg-foreground/5 rounded-full self-start lg:self-auto"
           >
-            Explore All Solutions
+            {t('services.cta')}
             <ArrowRight className="ml-2 w-4 h-4" />
           </Button>
         </div>
@@ -70,10 +73,10 @@ const ServicesSection = () => {
               </div>
               
               <h3 className="font-display text-2xl mb-4 text-foreground">
-                {service.title}
+                {t(service.titleKey)}
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                {service.description}
+                {t(service.descriptionKey)}
               </p>
             </div>
           ))}

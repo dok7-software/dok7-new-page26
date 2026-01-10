@@ -1,31 +1,33 @@
 import { Linkedin, Twitter, Instagram } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+  const { t } = useTranslation();
   const footerLinks = {
-    Solutions: [
-      "Wellbeing Automation",
-      "Intelligent Systems",
-      "Trusted Platforms",
-      "Team Empowerment"
+    [t('footer.sections.solutions.title')]: [
+      t('footer.sections.solutions.links.wellbeing'),
+      t('footer.sections.solutions.links.intelligent'),
+      t('footer.sections.solutions.links.trusted'),
+      t('footer.sections.solutions.links.team')
     ],
-    Company: [
-      "About Us",
-      "Our Process",
-      "Stories",
-      "Careers"
+    [t('footer.sections.company.title')]: [
+      t('footer.sections.company.links.about'),
+      t('footer.sections.company.links.process'),
+      t('footer.sections.company.links.stories'),
+      t('footer.sections.company.links.careers')
     ],
-    Resources: [
-      "Insights",
-      "Case Studies",
-      "Newsletter",
-      "Contact"
+    [t('footer.sections.resources.title')]: [
+      t('footer.sections.resources.links.insights'),
+      t('footer.sections.resources.links.cases'),
+      t('footer.sections.resources.links.newsletter'),
+      t('footer.sections.resources.links.contact')
     ]
   };
 
   const socialLinks = [
-    { icon: <Linkedin className="w-5 h-5" />, href: "#", label: "LinkedIn" },
-    { icon: <Twitter className="w-5 h-5" />, href: "#", label: "Twitter" },
-    { icon: <Instagram className="w-5 h-5" />, href: "#", label: "Instagram" }
+    { icon: <Linkedin className="w-5 h-5" />, href: "#", label: t('footer.social.linkedin') },
+    { icon: <Twitter className="w-5 h-5" />, href: "#", label: t('footer.social.twitter') },
+    { icon: <Instagram className="w-5 h-5" />, href: "#", label: t('footer.social.instagram') }
   ];
 
   return (
@@ -39,11 +41,10 @@ const Footer = () => {
               <div className="w-10 h-10 rounded-full bg-gradient-to-br from-accent via-secondary to-primary flex items-center justify-center">
                 <span className="font-display text-foreground font-medium text-lg">D7</span>
               </div>
-              <span className="font-display text-xl text-background">DOK7</span>
+              <span className="font-display text-xl text-background">{t('header.logo')}</span>
             </a>
             <p className="text-background/70 leading-relaxed text-sm">
-              Technology that works quietly to improve people's lives. 
-              Human-centered automation you can trust.
+              {t('footer.description')}
             </p>
           </div>
 
@@ -70,7 +71,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="pt-10 border-t border-background/10 flex flex-col md:flex-row items-center justify-between gap-6">
           <p className="text-sm text-background/50">
-            © 2026 DOK7 Software Solutions. Made with care.
+            {t('footer.copyright')}
           </p>
 
           {/* Social Links */}

@@ -1,7 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const CTASection = () => {
+  const { t } = useTranslation();
+
   return (
     <section id="contact" className="py-32 relative overflow-hidden">
       {/* Warm gradient background */}
@@ -16,13 +19,12 @@ const CTASection = () => {
           </div>
           
           <h2 className="font-display text-4xl md:text-5xl lg:text-6xl mb-6 text-foreground">
-            Ready for technology
+            {t('cta.headline')}
             <br />
-            <span className="font-display-light text-muted-foreground">that feels like relief?</span>
+            <span className="font-display-light text-muted-foreground">{t('cta.headlineLight')}</span>
           </h2>
           <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed">
-            Let's have a gentle conversation about how we can help your team 
-            reclaim their time and focus on what truly matters.
+            {t('cta.subtitle')}
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -30,7 +32,7 @@ const CTASection = () => {
               size="lg" 
               className="bg-foreground text-background hover:bg-foreground/90 rounded-full px-10 py-6"
             >
-              Start a Conversation
+              {t('cta.ctaPrimary')}
               <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
             <Button 
@@ -38,7 +40,7 @@ const CTASection = () => {
               variant="outline"
               className="border-foreground/20 text-foreground hover:bg-foreground/5 rounded-full px-10 py-6"
             >
-              hello@dok7.com
+              {t('cta.ctaSecondary')}
             </Button>
           </div>
         </div>

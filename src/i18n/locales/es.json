@@ -1,0 +1,98 @@
+{
+  "header": {
+    "logo": "DOK7",
+    "nav": {
+      "solutions": "Soluciones",
+      "about": "Nosotros",
+      "process": "Proceso",
+      "stories": "Historias",
+      "contact": "Contacto"
+    },
+    "cta": "Hablemos"
+  },
+  "hero": {
+    "headline": "Tecnología",
+    "headlineHighlight": "que cuida",
+    "subtitle": "Creamos automatización centrada en las personas que trabaja en silencio para mejorar sus vidas. Soluciones accesibles, empáticas y confiables que reducen el estrés y liberan tu tiempo.",
+    "ctaPrimary": "Comienza tu Experiencia",
+    "ctaSecondary": "Descubre Nuestro Enfoque",
+    "trustedBy": "La confianza de equipos que valoran a las personas",
+    "sectors": {
+      "healthcare": "Salud",
+      "education": "Educación",
+      "wellbeing": "Bienestar",
+      "community": "Comunidad",
+      "sustainability": "Sostenibilidad"
+    }
+  },
+  "services": {
+    "label": "Lo que Creamos",
+    "headline": "Automatización como",
+    "headlineLight": "alivio",
+    "cta": "Explora Todas las Soluciones",
+    "items": {
+      "wellbeing": {
+        "title": "Automatización para el Bienestar",
+        "description": "Sistemas que liberan a las personas de tareas repetitivas, dándoles tiempo para lo que realmente importa en sus vidas."
+      },
+      "intelligent": {
+        "title": "Soluciones Inteligentes",
+        "description": "Tecnología inteligente que aprende y se adapta, trabajando siempre en segundo plano para servirte mejor."
+      },
+      "trusted": {
+        "title": "Sistemas Confiables",
+        "description": "Plataformas seguras y confiables construidas con transparencia y cuidado por tus datos y tu tranquilidad."
+      },
+      "team": {
+        "title": "Potenciación de Equipos",
+        "description": "Herramientas que unen a los equipos, fomentando la colaboración y la conexión humana genuina."
+      }
+    }
+  },
+  "cta": {
+    "headline": "¿Listo para tecnología",
+    "headlineLight": "que se siente como alivio?",
+    "subtitle": "Tengamos una conversación tranquila sobre cómo podemos ayudar a tu equipo a recuperar su tiempo y enfocarse en lo que realmente importa.",
+    "ctaPrimary": "Inicia una Conversación",
+    "ctaSecondary": "hello@dok7.com"
+  },
+  "footer": {
+    "description": "Tecnología que trabaja en silencio para mejorar la vida de las personas. Automatización centrada en lo humano en la que puedes confiar.",
+    "sections": {
+      "solutions": {
+        "title": "Soluciones",
+        "links": {
+          "wellbeing": "Automatización para el Bienestar",
+          "intelligent": "Sistemas Inteligentes",
+          "trusted": "Plataformas Confiables",
+          "team": "Potenciación de Equipos"
+        }
+      },
+      "company": {
+        "title": "Empresa",
+        "links": {
+          "about": "Nosotros",
+          "process": "Nuestro Proceso",
+          "stories": "Historias",
+          "careers": "Empleo"
+        }
+      },
+      "resources": {
+        "title": "Recursos",
+        "links": {
+          "insights": "Perspectivas",
+          "cases": "Casos de Estudio",
+          "newsletter": "Boletín",
+          "contact": "Contacto"
+        }
+      }
+    },
+    "copyright": "© 2026 DOK7 Software Solutions. Hecho con cuidado.",
+    "social": {
+      "linkedin": "LinkedIn",
+      "twitter": "Twitter",
+      "instagram": "Instagram"
+    }
+  }
+}
+

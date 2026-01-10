@@ -2,16 +2,19 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { ThemeToggle } from "./ThemeToggle";
+import { LanguageToggle } from "./LanguageToggle";
+import { useTranslation } from "react-i18next";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { t } = useTranslation();
 
   const navItems = [
-    { label: "Solutions", href: "#solutions" },
-    { label: "About", href: "#about" },
-    { label: "Process", href: "#process" },
-    { label: "Stories", href: "#stories" },
-    { label: "Contact", href: "#contact" },
+    { label: t('header.nav.solutions'), href: "#solutions" },
+    { label: t('header.nav.about'), href: "#about" },
+    { label: t('header.nav.process'), href: "#process" },
+    { label: t('header.nav.stories'), href: "#stories" },
+    { label: t('header.nav.contact'), href: "#contact" },
   ];
 
   return (
@@ -23,7 +26,7 @@ const Header = () => {
             <div className="w-10 h-10 rounded-full bg-gradient-to-br from-accent via-secondary to-primary flex items-center justify-center">
               <span className="font-display text-foreground font-medium text-lg">D7</span>
             </div>
-            <span className="font-display text-xl text-foreground">DOK7</span>
+            <span className="font-display text-xl text-foreground">{t('header.logo')}</span>
           </a>
 
           {/* Desktop Navigation */}
@@ -41,14 +44,16 @@ const Header = () => {
 
           {/* Desktop CTA and Theme Toggle */}
           <div className="hidden lg:flex items-center gap-4">
+            <LanguageToggle />
             <ThemeToggle />
             <Button className="bg-foreground text-background hover:bg-foreground/90 rounded-full px-6">
-              Let's Talk
+              {t('header.cta')}
             </Button>
           </div>
 
           {/* Mobile Menu Button */}
           <div className="lg:hidden flex items-center gap-3">
+            <LanguageToggle />
             <ThemeToggle />
             <button
               className="p-2 text-foreground"
@@ -74,7 +79,7 @@ const Header = () => {
                 </a>
               ))}
               <Button className="mt-4 bg-foreground text-background rounded-full">
-                Let's Talk
+                {t('header.cta')}
               </Button>
             </nav>
           </div>

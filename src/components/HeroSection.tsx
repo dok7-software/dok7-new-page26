@@ -1,7 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const HeroSection = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
       {/* Soft organic gradient backgrounds */}
@@ -13,16 +16,14 @@ const HeroSection = () => {
         <div className="text-center max-w-4xl mx-auto">
           {/* Main Headline */}
           <h1 className="font-display text-5xl md:text-7xl lg:text-8xl mb-8 leading-tight text-foreground">
-            Technology
+            {t('hero.headline')}
             <br />
-            <span className="gradient-text">that cares</span>
+            <span className="gradient-text">{t('hero.headlineHighlight')}</span>
           </h1>
 
           {/* Subtitle */}
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-12 leading-relaxed font-light">
-            We create human-centered automation that works quietly to improve 
-            people's lives. Accessible, empathetic, and trustworthy solutions 
-            that reduce stress and free your time.
+            {t('hero.subtitle')}
           </p>
 
           {/* CTA Buttons */}
@@ -31,7 +32,7 @@ const HeroSection = () => {
               size="lg" 
               className="bg-foreground text-background hover:bg-foreground/90 rounded-full px-8 py-6 text-base"
             >
-              Start Your Journey
+              {t('hero.ctaPrimary')}
               <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
             <Button 
@@ -39,20 +40,20 @@ const HeroSection = () => {
               variant="outline"
               className="border-foreground/20 text-foreground hover:bg-foreground/5 rounded-full px-8 py-6 text-base"
             >
-              Discover Our Approach
+              {t('hero.ctaSecondary')}
             </Button>
           </div>
 
           {/* Trusted by */}
           <div className="pt-12 border-t border-border/50">
-            <p className="text-sm text-muted-foreground mb-8">Trusted by teams who value people first</p>
+            <p className="text-sm text-muted-foreground mb-8">{t('hero.trustedBy')}</p>
             <div className="flex flex-wrap items-center justify-center gap-12">
-              {["Healthcare", "Education", "Wellbeing", "Community", "Sustainability"].map((sector) => (
+              {["healthcare", "education", "wellbeing", "community", "sustainability"].map((sector) => (
                 <span 
                   key={sector}
                   className="text-muted-foreground/60 text-sm font-medium tracking-wide"
                 >
-                  {sector}
+                  {t(`hero.sectors.${sector}`)}
                 </span>
               ))}
             </div>

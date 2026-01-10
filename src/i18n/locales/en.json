@@ -1,0 +1,98 @@
+{
+  "header": {
+    "logo": "DOK7",
+    "nav": {
+      "solutions": "Solutions",
+      "about": "About",
+      "process": "Process",
+      "stories": "Stories",
+      "contact": "Contact"
+    },
+    "cta": "Let's Talk"
+  },
+  "hero": {
+    "headline": "Technology",
+    "headlineHighlight": "that cares",
+    "subtitle": "We create human-centered automation that works quietly to improve people's lives. Accessible, empathetic, and trustworthy solutions that reduce stress and free your time.",
+    "ctaPrimary": "Start Your Journey",
+    "ctaSecondary": "Discover Our Approach",
+    "trustedBy": "Trusted by teams who value people first",
+    "sectors": {
+      "healthcare": "Healthcare",
+      "education": "Education",
+      "wellbeing": "Wellbeing",
+      "community": "Community",
+      "sustainability": "Sustainability"
+    }
+  },
+  "services": {
+    "label": "What We Create",
+    "headline": "Automation as",
+    "headlineLight": "relief",
+    "cta": "Explore All Solutions",
+    "items": {
+      "wellbeing": {
+        "title": "Wellbeing Automation",
+        "description": "Systems that free people from repetitive tasks, giving them time for what matters most in their lives."
+      },
+      "intelligent": {
+        "title": "Intelligent Solutions",
+        "description": "Smart technology that learns and adapts, always working quietly in the background to serve you better."
+      },
+      "trusted": {
+        "title": "Trusted Systems",
+        "description": "Secure, reliable platforms built with transparency and care for your data and peace of mind."
+      },
+      "team": {
+        "title": "Team Empowerment",
+        "description": "Tools that bring teams together, fostering collaboration and genuine human connection."
+      }
+    }
+  },
+  "cta": {
+    "headline": "Ready for technology",
+    "headlineLight": "that feels like relief?",
+    "subtitle": "Let's have a gentle conversation about how we can help your team reclaim their time and focus on what truly matters.",
+    "ctaPrimary": "Start a Conversation",
+    "ctaSecondary": "hello@dok7.com"
+  },
+  "footer": {
+    "description": "Technology that works quietly to improve people's lives. Human-centered automation you can trust.",
+    "sections": {
+      "solutions": {
+        "title": "Solutions",
+        "links": {
+          "wellbeing": "Wellbeing Automation",
+          "intelligent": "Intelligent Systems",
+          "trusted": "Trusted Platforms",
+          "team": "Team Empowerment"
+        }
+      },
+      "company": {
+        "title": "Company",
+        "links": {
+          "about": "About Us",
+          "process": "Our Process",
+          "stories": "Stories",
+          "careers": "Careers"
+        }
+      },
+      "resources": {
+        "title": "Resources",
+        "links": {
+          "insights": "Insights",
+          "cases": "Case Studies",
+          "newsletter": "Newsletter",
+          "contact": "Contact"
+        }
+      }
+    },
+    "copyright": "© 2026 DOK7 Software Solutions. Made with care.",
+    "social": {
+      "linkedin": "LinkedIn",
+      "twitter": "Twitter",
+      "instagram": "Instagram"
+    }
+  }
+}
+
