@@ -49,8 +49,52 @@
   }
 
   .dark {
-    --background: 220 45% 18%;
-    --foreground: 40 30% 97%;
+    /* Dark mode base colors - based on #182547 deep blue */
+    --background: 221 46% 19%;
+    --foreground: 267 25% 88%;
+
+    /* Card backgrounds - slightly lighter than base */
+    --card: 221 42% 22%;
+    --card-foreground: 267 25% 88%;
+
+    --popover: 221 42% 22%;
+    --popover-foreground: 267 25% 88%;
+
+    /* Primary interactive - #547dcd */
+    --primary: 220 55% 58%;
+    --primary-foreground: 267 25% 88%;
+
+    /* Secondary accent - #b796e5 */
+    --secondary: 267 55% 74%;
+    --secondary-foreground: 221 46% 19%;
+
+    /* Muted surfaces - darker variations */
+    --muted: 221 40% 25%;
+    --muted-foreground: 267 15% 70%;
+
+    /* Accent - #ead681 for key CTAs */
+    --accent: 45 70% 70%;
+    --accent-foreground: 221 46% 19%;
+
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 267 25% 88%;
+
+    --border: 221 35% 28%;
+    --input: 221 35% 28%;
+    --ring: 220 55% 58%;
+
+    /* DOK7 Custom Tokens for dark mode */
+    --dok7-warm: 45 70% 70%;
+    --dok7-calm: 267 55% 74%;
+    --dok7-trust: 220 55% 58%;
+    --dok7-deep: 221 46% 19%;
+    
+    /* Subtle gradients for dark mode */
+    --gradient-primary: linear-gradient(135deg, hsl(45 70% 70% / 0.8) 0%, hsl(267 55% 74% / 0.7) 50%, hsl(220 55% 58% / 0.8) 100%);
+    --gradient-soft: linear-gradient(180deg, hsl(45 70% 70% / 0.15) 0%, hsl(267 55% 74% / 0.1) 50%, hsl(220 55% 58% / 0.08) 100%);
+    --gradient-radial: radial-gradient(ellipse at center, hsl(267 55% 74% / 0.1) 0%, transparent 70%);
+    --shadow-soft: 0 4px 24px hsl(0 0% 0% / 0.3);
+    --shadow-card: 0 2px 12px hsl(0 0% 0% / 0.2);
   }
 }
 
@@ -67,6 +111,16 @@
     @apply bg-background text-foreground antialiased;
     font-family: 'Inter', system-ui, sans-serif;
     font-weight: 300;
+    transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
+  }
+
+  /* Smooth transitions for theme changes */
+  *,
+  *::before,
+  *::after {
+    transition-property: background-color, border-color, color, fill, stroke;
+    transition-duration: 250ms;
+    transition-timing-function: ease-in-out;
   }
 
   /* Grain texture overlay */
