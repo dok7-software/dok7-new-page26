@@ -6,7 +6,11 @@
       "about": "About",
       "process": "Process",
       "stories": "Stories",
-      "contact": "Contact"
+      "contact": "Contact",
+      "solutionsMenu": {
+        "customDevelopment": "Custom Development",
+        "softwareIntegrations": "Software Integrations"
+      }
     },
     "cta": "Let's Talk"
   },
@@ -55,6 +59,171 @@
     "subtitle": "Let's have a gentle conversation about how we can help your team reclaim their time and focus on what truly matters.",
     "ctaPrimary": "Start a Conversation",
     "ctaSecondary": "hello@dok7.com"
+  },
+  "customDevelopment": {
+    "label": "Software Solutions",
+    "hero": {
+      "headline": "Software solutions",
+      "headlineHighlight": "for your business",
+      "subtitle": "At DOK7, we help free up time and energy so companies can focus on what really matters: the wellbeing of their teams and their growth.",
+      "ctaPrimary": "Start Your Project",
+      "ctaSecondary": "Learn More"
+    },
+    "why": {
+      "headline": "Why is it important?",
+      "description": "Custom-made software improves productivity and allows you to solve unique challenges in your industry, giving you a competitive advantage."
+    },
+    "benefits": {
+      "productivity": {
+        "title": "Greater Productivity",
+        "description": "Optimize processes and reduce time on repetitive tasks to focus on strategy."
+      },
+      "competitive": {
+        "title": "Competitive Advantage",
+        "description": "Unique solutions designed for the specific challenges of your industry."
+      },
+      "personalized": {
+        "title": "Fully Customized",
+        "description": "Software that adapts to your needs, not the other way around."
+      }
+    },
+    "features": {
+      "label": "Our Approach",
+      "headline": "Customized solutions",
+      "headlineLight": "for your success",
+      "respectProcesses": {
+        "title": "We respect your existing processes",
+        "description": "We don't change your way of working. We create solutions that integrate naturally with your current processes, respecting what already works well."
+      },
+      "efficiency": {
+        "title": "We increase your efficiency",
+        "description": "We automate repetitive tasks and optimize workflows so your team can focus on what really adds value."
+      },
+      "focus": {
+        "title": "Focus on your team",
+        "description": "We create tools that improve your team's wellbeing, reducing stress and freeing time for personal and professional growth."
+      }
+    },
+    "process": {
+      "headline": "Our work process",
+      "description": "A structured and transparent approach to take your project from idea to successful implementation.",
+      "steps": {
+        "step1": {
+          "title": "Discovery and Analysis",
+          "description": "We deeply understand your business, processes, and challenges to design the perfect solution."
+        },
+        "step2": {
+          "title": "Design and Planning",
+          "description": "We create a detailed roadmap with clear objectives and incremental deliveries."
+        },
+        "step3": {
+          "title": "Agile Development",
+          "description": "We build your solution iteratively, with constant feedback and real-time adjustments."
+        },
+        "step4": {
+          "title": "Implementation and Support",
+          "description": "We launch your solution with complete accompaniment and continuous support to ensure success."
+        }
+      }
+    },
+    "cta": {
+      "headline": "Ready to transform",
+      "headlineLight": "your business?",
+      "subtitle": "Let's talk about how we can help you create the perfect solution for your specific needs.",
+      "ctaPrimary": "Schedule a Consultation",
+      "ctaSecondary": "View Case Studies"
+    }
+  },
+  "softwareIntegrations": {
+    "label": "Total Connectivity",
+    "hero": {
+      "headline": "Software",
+      "headlineHighlight": "integrations",
+      "subtitle": "We connect your systems and applications to work in perfect sync. Our expertise in integrations ensures your processes flow smoothly, improving operational efficiency and centralizing key information for decision-making.",
+      "ctaPrimary": "Connect Your Systems",
+      "ctaSecondary": "View Integrations"
+    },
+    "problem": {
+      "headline": "What problem does it solve?",
+      "description": "Avoid errors in manual processes, optimize the use of your current tools, and reduce time wasted on redundant tasks."
+    },
+    "benefits": {
+      "automation": {
+        "title": "Complete Automation",
+        "description": "Eliminate manual work of transferring data between different systems."
+      },
+      "centralized": {
+        "title": "Centralized Information",
+        "description": "Make better decisions with unified data updated in real-time."
+      },
+      "efficiency": {
+        "title": "Maximum Efficiency",
+        "description": "Optimize your processes and reduce human errors in data transfer."
+      }
+    },
+    "examples": {
+      "label": "Use Cases",
+      "headline": "Integrations that",
+      "headlineLight": "transform your business",
+      "crm": {
+        "title": "CRM & Billing",
+        "description": "Automatic synchronization between CRM and billing systems for seamless workflow."
+      },
+      "ecommerce": {
+        "title": "E-commerce & Inventory",
+        "description": "Integration of e-commerce platforms with inventory systems for real-time management."
+      },
+      "productivity": {
+        "title": "Productivity & Management",
+        "description": "Connection of productivity tools with project management systems for better collaboration."
+      }
+    },
+    "features": {
+      "label": "Our Solutions",
+      "headline": "Perfect connectivity",
+      "headlineLight": "for your digital ecosystem",
+      "synchronization": {
+        "title": "Real-Time Synchronization",
+        "description": "Keep all your systems updated instantly without manual intervention."
+      },
+      "optimization": {
+        "title": "Process Optimization",
+        "description": "Make the most of your existing tools with intelligent workflows."
+      },
+      "reduction": {
+        "title": "Error Reduction",
+        "description": "Minimize human errors by automating data transfer between systems."
+      }
+    },
+    "process": {
+      "headline": "Our integration process",
+      "description": "A proven approach to connect your systems securely and efficiently.",
+      "steps": {
+        "step1": {
+          "title": "System Analysis",
+          "description": "We evaluate your current technology ecosystem and identify integration opportunities."
+        },
+        "step2": {
+          "title": "Architecture Design",
+          "description": "We create a robust and scalable integration plan tailored to your needs."
+        },
+        "step3": {
+          "title": "Secure Implementation",
+          "description": "We connect your systems with best practices in security and performance."
+        },
+        "step4": {
+          "title": "Monitoring and Support",
+          "description": "We continuously monitor integrations and provide proactive support."
+        }
+      }
+    },
+    "cta": {
+      "headline": "Ready to connect",
+      "headlineLight": "your digital ecosystem?",
+      "subtitle": "Let's talk about how we can integrate your systems to work in perfect harmony.",
+      "ctaPrimary": "Schedule a Consultation",
+      "ctaSecondary": "View Case Studies"
+    }
   },
   "footer": {
     "description": "Technology that works quietly to improve people's lives. Human-centered automation you can trust.",

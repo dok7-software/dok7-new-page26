@@ -6,7 +6,11 @@
       "about": "Nosotros",
       "process": "Proceso",
       "stories": "Historias",
-      "contact": "Contacto"
+      "contact": "Contacto",
+      "solutionsMenu": {
+        "customDevelopment": "Desarrollo a Medida",
+        "softwareIntegrations": "Integraciones de Software"
+      }
     },
     "cta": "Hablemos"
   },
@@ -55,6 +59,171 @@
     "subtitle": "Tengamos una conversación tranquila sobre cómo podemos ayudar a tu equipo a recuperar su tiempo y enfocarse en lo que realmente importa.",
     "ctaPrimary": "Inicia una Conversación",
     "ctaSecondary": "hello@dok7.com"
+  },
+  "customDevelopment": {
+    "label": "Soluciones de Software",
+    "hero": {
+      "headline": "Soluciones de software",
+      "headlineHighlight": "para tu negocio",
+      "subtitle": "En DOK7 ayudamos a liberar tiempo y energía para que las empresas se enfoquen en lo que realmente importa: el bienestar de sus equipos y su crecimiento.",
+      "ctaPrimary": "Comienza tu Proyecto",
+      "ctaSecondary": "Conoce Más"
+    },
+    "why": {
+      "headline": "¿Por qué es importante?",
+      "description": "Un software hecho a tu medida mejora la productividad y permite resolver desafíos únicos de tu industria, dándote una ventaja competitiva."
+    },
+    "benefits": {
+      "productivity": {
+        "title": "Mayor Productividad",
+        "description": "Optimiza procesos y reduce tiempo en tareas repetitivas para enfocarte en lo estratégico."
+      },
+      "competitive": {
+        "title": "Ventaja Competitiva",
+        "description": "Soluciones únicas diseñadas para los desafíos específicos de tu industria."
+      },
+      "personalized": {
+        "title": "Totalmente Personalizado",
+        "description": "Software que se adapta a tus necesidades, no al revés."
+      }
+    },
+    "features": {
+      "label": "Nuestro Enfoque",
+      "headline": "Soluciones personalizadas",
+      "headlineLight": "para tu éxito",
+      "respectProcesses": {
+        "title": "Respetamos tus procesos existentes",
+        "description": "No cambiamos tu forma de trabajo. Creamos soluciones que se integran naturalmente con tus procesos actuales, respetando lo que ya funciona bien."
+      },
+      "efficiency": {
+        "title": "Aumentamos tu eficiencia",
+        "description": "Automatizamos tareas repetitivas y optimizamos flujos de trabajo para que tu equipo pueda enfocarse en lo que realmente aporta valor."
+      },
+      "focus": {
+        "title": "Enfoque en tu equipo",
+        "description": "Creamos herramientas que mejoran el bienestar de tu equipo, reduciendo el estrés y liberando tiempo para el crecimiento personal y profesional."
+      }
+    },
+    "process": {
+      "headline": "Nuestro proceso de trabajo",
+      "description": "Un enfoque estructurado y transparente para llevar tu proyecto desde la idea hasta la implementación exitosa.",
+      "steps": {
+        "step1": {
+          "title": "Descubrimiento y Análisis",
+          "description": "Entendemos profundamente tu negocio, procesos y desafíos para diseñar la solución perfecta."
+        },
+        "step2": {
+          "title": "Diseño y Planificación",
+          "description": "Creamos una hoja de ruta detallada con objetivos claros y entregas incrementales."
+        },
+        "step3": {
+          "title": "Desarrollo Ágil",
+          "description": "Construimos tu solución de forma iterativa, con retroalimentación constante y ajustes en tiempo real."
+        },
+        "step4": {
+          "title": "Implementación y Soporte",
+          "description": "Lanzamos tu solución con acompañamiento completo y soporte continuo para garantizar el éxito."
+        }
+      }
+    },
+    "cta": {
+      "headline": "¿Listo para transformar",
+      "headlineLight": "tu negocio?",
+      "subtitle": "Conversemos sobre cómo podemos ayudarte a crear la solución perfecta para tus necesidades específicas.",
+      "ctaPrimary": "Agenda una Consulta",
+      "ctaSecondary": "Ver Casos de Estudio"
+    }
+  },
+  "softwareIntegrations": {
+    "label": "Conectividad Total",
+    "hero": {
+      "headline": "Integraciones",
+      "headlineHighlight": "de software",
+      "subtitle": "Conectamos tus sistemas y aplicaciones para que trabajen en perfecta sincronía. Nuestra experiencia en integraciones asegura que tus procesos fluyan sin problemas, mejorando la eficiencia operativa y centralizando información clave para la toma de decisiones.",
+      "ctaPrimary": "Conecta tus Sistemas",
+      "ctaSecondary": "Ver Integraciones"
+    },
+    "problem": {
+      "headline": "¿Qué problema resuelve?",
+      "description": "Evita errores en procesos manuales, optimiza el uso de tus herramientas actuales y reduce el tiempo perdido en tareas redundantes."
+    },
+    "benefits": {
+      "automation": {
+        "title": "Automatización Completa",
+        "description": "Elimina el trabajo manual de transferir datos entre sistemas diferentes."
+      },
+      "centralized": {
+        "title": "Información Centralizada",
+        "description": "Toma mejores decisiones con datos unificados y actualizados en tiempo real."
+      },
+      "efficiency": {
+        "title": "Máxima Eficiencia",
+        "description": "Optimiza tus procesos y reduce errores humanos en la transferencia de datos."
+      }
+    },
+    "examples": {
+      "label": "Casos de Uso",
+      "headline": "Integraciones que",
+      "headlineLight": "transforman tu negocio",
+      "crm": {
+        "title": "CRM & Facturación",
+        "description": "Sincronización automática entre CRM y sistemas de facturación para un flujo de trabajo sin interrupciones."
+      },
+      "ecommerce": {
+        "title": "E-commerce & Inventario",
+        "description": "Integración de plataformas de e-commerce con sistemas de inventario para gestión en tiempo real."
+      },
+      "productivity": {
+        "title": "Productividad & Gestión",
+        "description": "Conexión de herramientas de productividad con sistemas de gestión de proyectos para mejor colaboración."
+      }
+    },
+    "features": {
+      "label": "Nuestras Soluciones",
+      "headline": "Conectividad perfecta",
+      "headlineLight": "para tu ecosistema digital",
+      "synchronization": {
+        "title": "Sincronización en Tiempo Real",
+        "description": "Mantén todos tus sistemas actualizados instantáneamente sin intervención manual."
+      },
+      "optimization": {
+        "title": "Optimización de Procesos",
+        "description": "Aprovecha al máximo tus herramientas existentes con flujos de trabajo inteligentes."
+      },
+      "reduction": {
+        "title": "Reducción de Errores",
+        "description": "Minimiza errores humanos automatizando la transferencia de datos entre sistemas."
+      }
+    },
+    "process": {
+      "headline": "Nuestro proceso de integración",
+      "description": "Un enfoque probado para conectar tus sistemas de forma segura y eficiente.",
+      "steps": {
+        "step1": {
+          "title": "Análisis de Sistemas",
+          "description": "Evaluamos tu ecosistema tecnológico actual e identificamos oportunidades de integración."
+        },
+        "step2": {
+          "title": "Diseño de Arquitectura",
+          "description": "Creamos un plan de integración robusto y escalable adaptado a tus necesidades."
+        },
+        "step3": {
+          "title": "Implementación Segura",
+          "description": "Conectamos tus sistemas con las mejores prácticas de seguridad y rendimiento."
+        },
+        "step4": {
+          "title": "Monitoreo y Soporte",
+          "description": "Supervisamos continuamente las integraciones y brindamos soporte proactivo."
+        }
+      }
+    },
+    "cta": {
+      "headline": "¿Listo para conectar",
+      "headlineLight": "tu ecosistema digital?",
+      "subtitle": "Conversemos sobre cómo podemos integrar tus sistemas para que trabajen en perfecta armonía.",
+      "ctaPrimary": "Agenda una Consulta",
+      "ctaSecondary": "Ver Casos de Estudio"
+    }
   },
   "footer": {
     "description": "Tecnología que trabaja en silencio para mejorar la vida de las personas. Automatización centrada en lo humano en la que puedes confiar.",

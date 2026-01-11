@@ -38,10 +38,11 @@ const Footer = () => {
           {/* Logo & Description */}
           <div className="col-span-2 md:col-span-1">
             <a href="/" className="flex items-center gap-3 mb-6">
-              <div className="w-10 h-10 rounded-full bg-gradient-to-br from-accent via-secondary to-primary flex items-center justify-center">
-                <span className="font-display text-foreground font-medium text-lg">D7</span>
-              </div>
-              <span className="font-display text-xl text-background">{t('header.logo')}</span>
+              <img 
+                src="/images/logo cuadrado blanco sin fondo.png" 
+                alt={t('header.logo')}
+                className="h-10 w-auto"
+              />
             </a>
             <p className="text-background/70 leading-relaxed text-sm">
               {t('footer.description')}
