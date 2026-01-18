@@ -1,17 +1,14 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, ChevronDown } from "lucide-react";
-import { ThemeToggle } from "./ThemeToggle";
 import { LanguageToggle } from "./LanguageToggle";
 import { useTranslation } from "react-i18next";
-import { useTheme } from "next-themes";
 import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSolutionsOpen, setIsSolutionsOpen] = useState(false);
   const { t } = useTranslation();
-  const { theme } = useTheme();
 
   const navItems = [
     { 
@@ -29,13 +26,11 @@ const Header = () => {
     { label: t('header.nav.contact'), href: "#contact" },
   ];
 
-  // Determinar qué logo usar según el tema
-  const logoSrc = theme === 'dark' 
-    ? '/images/Logo-completo_blanco_sin-fondo.png'
-    : '/images/logo completo a color sin fondo.png';
+  // Logo siempre en color para el diseño de fondos alternantes
+  const logoSrc = '/images/logo completo a color sin fondo.png';
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-sm">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border/50">
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
@@ -91,10 +86,9 @@ const Header = () => {
             ))}
           </nav>
 
-          {/* Desktop CTA and Theme Toggle */}
+          {/* Desktop CTA */}
           <div className="hidden lg:flex items-center gap-4">
             <LanguageToggle />
-            <ThemeToggle />
             <Button className="bg-foreground text-background hover:bg-foreground/90 rounded-full px-6">
               {t('header.cta')}
             </Button>
@@ -103,7 +97,6 @@ const Header = () => {
           {/* Mobile Menu Button */}
           <div className="lg:hidden flex items-center gap-3">
             <LanguageToggle />
-            <ThemeToggle />
             <button
               className="p-2 text-foreground"
               onClick={() => setIsMenuOpen(!isMenuOpen)}

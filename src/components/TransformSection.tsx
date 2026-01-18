@@ -1,47 +1,50 @@
+import { useTranslation } from "react-i18next";
+
 const TransformSection = () => {
+  const { t } = useTranslation();
+
   const values = [
     {
-      title: "Empathy First",
-      description: "We listen deeply to understand the real challenges people face, designing solutions that truly serve human needs."
+      title: t('transform.values.empathy.title'),
+      description: t('transform.values.empathy.description')
     },
     {
-      title: "Quiet Innovation",
-      description: "Technology should work seamlessly in the background, enhancing life without demanding attention."
+      title: t('transform.values.innovation.title'),
+      description: t('transform.values.innovation.description')
     },
     {
-      title: "Trustworthy & Clear",
-      description: "We believe in transparent communication and building lasting relationships based on reliability."
+      title: t('transform.values.trustworthy.title'),
+      description: t('transform.values.trustworthy.description')
     }
   ];
 
   const stats = [
-    { value: "98%", label: "Client satisfaction" },
-    { value: "15+", label: "Years of care" },
-    { value: "200+", label: "Lives improved" },
+    { value: "98%", label: t('transform.stats.satisfaction') },
+    { value: "15+", label: t('transform.stats.years') },
+    { value: "200+", label: t('transform.stats.lives') },
   ];
 
   return (
-    <section id="about" className="py-32 relative overflow-hidden">
+    <section id="about" className="py-16 md:py-32 relative overflow-hidden">
       {/* Soft background gradient */}
       <div className="absolute top-0 right-0 w-[400px] h-[400px] rounded-full bg-accent/10 blur-[100px]" />
       
       <div className="container mx-auto px-6 relative z-10">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-20">
-          <p className="text-primary text-sm tracking-widest mb-6 uppercase">Our Philosophy</p>
+          <p className="text-primary text-sm tracking-widest mb-6 uppercase">{t('transform.label')}</p>
           <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-foreground mb-6">
-            Human-centered
+            {t('transform.headline')}
             <br />
-            <span className="font-display-light text-muted-foreground">at every step</span>
+            <span className="font-display-light text-muted-foreground">{t('transform.headlineLight')}</span>
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed">
-            We believe technology should feel like relief, not complexity. 
-            Our approach puts people at the center of every decision.
+            {t('transform.description')}
           </p>
         </div>
 
         {/* Values */}
-        <div className="grid md:grid-cols-3 gap-8 mb-24">
+        <div className="grid md:grid-cols-3 gap-8 mb-12 md:mb-24">
           {values.map((value, index) => (
             <div 
               key={index}
@@ -61,13 +64,13 @@ const TransformSection = () => {
         </div>
 
         {/* Stats */}
-        <div className="grid md:grid-cols-3 gap-12 pt-16 border-t border-border/50">
+        <div className="grid grid-cols-3 gap-4 md:gap-12 pt-8 md:pt-16 border-t border-border/50">
           {stats.map((stat, index) => (
             <div key={index} className="text-center">
-              <div className="font-display text-5xl md:text-6xl gradient-text mb-3">
+              <div className="font-display text-3xl md:text-5xl lg:text-6xl gradient-text mb-2 md:mb-3">
                 {stat.value}
               </div>
-              <p className="text-muted-foreground">{stat.label}</p>
+              <p className="text-muted-foreground text-xs md:text-base">{stat.label}</p>
             </div>
           ))}
         </div>

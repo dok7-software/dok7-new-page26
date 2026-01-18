@@ -3,27 +3,48 @@ import HeroSection from "@/components/HeroSection";
 import TransformSection from "@/components/TransformSection";
 import ServicesSection from "@/components/ServicesSection";
 import AIShowcase from "@/components/AIShowcase";
-import AgentsSection from "@/components/AgentsSection";
 import CaseStudySection from "@/components/CaseStudySection";
 import InsightsSection from "@/components/InsightsSection";
 import CTASection from "@/components/CTASection";
+import FloatingCTASection from "@/components/FloatingCTASection";
 import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen">
       <Header />
       <main>
-        <HeroSection />
-        <TransformSection />
-        <ServicesSection />
-        <AIShowcase />
-        <AgentsSection />
-        <CaseStudySection />
-        <InsightsSection />
-        <CTASection />
+        {/* Sección 1 - Fondo Claro (Hero + Transform) */}
+        <div className="bg-section-light">
+          <HeroSection />
+          <TransformSection />
+        </div>
+        
+        {/* Sección 2 - Fondo Oscuro (Services + AIShowcase) */}
+        <div className="bg-section-dark">
+          <ServicesSection />
+          <AIShowcase />
+        </div>
+        
+        {/* Sección 3 - Transición con Floating CTA */}
+        <FloatingCTASection />
+        
+        {/* Sección 4 - Fondo Claro (CaseStudy) */}
+        <div className="bg-section-light">
+          <CaseStudySection />
+        </div>
+        
+        {/* Sección 5 - Fondo Oscuro (Insights + CTA) */}
+        <div className="bg-section-dark">
+          <InsightsSection />
+          <CTASection />
+        </div>
       </main>
-      <Footer />
+      
+      {/* Footer - Fondo Claro */}
+      <div className="bg-section-light">
+        <Footer />
+      </div>
     </div>
   );
 };

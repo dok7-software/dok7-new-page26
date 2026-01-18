@@ -29,6 +29,112 @@
       "sustainability": "Sustainability"
     }
   },
+  "transform": {
+    "label": "Our Philosophy",
+    "headline": "Human-centered",
+    "headlineLight": "at every step",
+    "description": "We believe technology should feel like relief, not complexity. Our approach puts people at the center of every decision.",
+    "values": {
+      "empathy": {
+        "title": "Empathy First",
+        "description": "We listen deeply to understand the real challenges people face, designing solutions that truly serve human needs."
+      },
+      "innovation": {
+        "title": "Quiet Innovation",
+        "description": "Technology should work seamlessly in the background, enhancing life without demanding attention."
+      },
+      "trustworthy": {
+        "title": "Trustworthy & Clear",
+        "description": "We believe in transparent communication and building lasting relationships based on reliability."
+      }
+    },
+    "stats": {
+      "satisfaction": "Client satisfaction",
+      "years": "Years of care",
+      "lives": "Lives improved"
+    }
+  },
+  "process": {
+    "label": "Our Process",
+    "headline": "A gentle approach",
+    "headlineLight": "to powerful results",
+    "description": "We don't believe in aggressive timelines or overwhelming complexity. Our process is designed to feel natural, respectful of your time, and focused on lasting positive change.",
+    "cta": "Begin Your Story",
+    "steps": {
+      "step1": {
+        "title": "Listen & Understand",
+        "description": "We begin by truly understanding your challenges, your people, and your vision for a better way of working."
+      },
+      "step2": {
+        "title": "Design with Care",
+        "description": "Solutions are crafted with empathy, focusing on what will genuinely improve daily experiences."
+      },
+      "step3": {
+        "title": "Build Thoughtfully",
+        "description": "We develop with precision and care, ensuring every detail serves the people who will use it."
+      },
+      "step4": {
+        "title": "Support & Grow",
+        "description": "Our relationship continues as partners, helping your solutions evolve with your needs."
+      }
+    }
+  },
+  "stories": {
+    "label": "Stories",
+    "headline": "Real people,",
+    "headlineLight": "real relief",
+    "cta": "Read All Stories",
+    "testimonials": {
+      "testimonial1": {
+        "quote": "DOK7 didn't just build us software — they gave our team their evenings back.",
+        "name": "Maria Santos",
+        "role": "Operations Director",
+        "company": "Sunrise Healthcare",
+        "impact": "40% less time on admin tasks"
+      },
+      "testimonial2": {
+        "quote": "Finally, technology that feels like it was made by people who actually care.",
+        "name": "James Chen",
+        "role": "Founder",
+        "company": "EduConnect",
+        "impact": "Team satisfaction up 65%"
+      },
+      "testimonial3": {
+        "quote": "The gentlest transformation we've ever experienced. And the most effective.",
+        "name": "Anna Kowalski",
+        "role": "CEO",
+        "company": "Wellspring Wellness",
+        "impact": "Serving 3x more clients"
+      }
+    }
+  },
+  "insights": {
+    "label": "Insights",
+    "headline": "Thoughts on",
+    "headlineLight": "technology that cares",
+    "cta": "View All Insights",
+    "readMore": "Read more",
+    "articles": {
+      "article1": {
+        "category": "Wellbeing",
+        "title": "The quiet revolution: automation that respects your time",
+        "excerpt": "How thoughtful technology can give us back the moments that matter most in our lives.",
+        "readTime": "4 min read"
+      },
+      "article2": {
+        "category": "Human-Centered",
+        "title": "Why empathy is our most important tool",
+        "excerpt": "Building technology that truly serves people starts with understanding their lived experience.",
+        "readTime": "6 min read"
+      },
+      "article3": {
+        "category": "Teams",
+        "title": "Creating space for creativity in automated workflows",
+        "excerpt": "When routine tasks handle themselves, teams discover new possibilities for innovation.",
+        "readTime": "5 min read"
+      }
+    }
+  },
   "services": {
     "label": "What We Create",
     "headline": "Automation as",
@@ -58,7 +164,15 @@
     "headlineLight": "that feels like relief?",
     "subtitle": "Let's have a gentle conversation about how we can help your team reclaim their time and focus on what truly matters.",
     "ctaPrimary": "Start a Conversation",
-    "ctaSecondary": "hello@dok7.com"
+    "ctaSecondary": "contacto@dok7.io"
+  },
+  "floatingCTA": {
+    "headline": "Time back for what matters",
+    "subtitle": "Automate processes, simplify operations and reclaim valuable time to focus on what really matters.",
+    "benefit1": "Custom solutions for your industry",
+    "benefit2": "Fast and frictionless implementation",
+    "benefit3": "Continuous support and updates",
+    "cta": "I want a free consultation"
   },
   "customDevelopment": {
     "label": "Software Solutions",
@@ -253,6 +367,14 @@
           "cases": "Case Studies",
           "newsletter": "Newsletter",
           "contact": "Contact"
+        }
+      },
+      "support": {
+        "title": "Support",
+        "links": {
+          "legal": "Legal Notice",
+          "privacy": "Privacy Policy",
+          "cookies": "Cookie Policy"
         }
       }
     },

@@ -6,10 +6,10 @@ const CTASection = () => {
   const { t } = useTranslation();
 
   return (
-    <section id="contact" className="py-32 relative overflow-hidden">
-      {/* Warm gradient background */}
-      <div className="absolute inset-0 bg-gradient-to-b from-background via-accent/5 to-background" />
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] rounded-full bg-gradient-to-r from-accent/15 via-secondary/10 to-primary/15 blur-[100px]" />
+    <section id="contact" className="py-32 relative overflow-hidden bg-section-dark">
+      {/* Subtle gradient overlay on dark background */}
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-accent/5 to-transparent" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] rounded-full bg-gradient-to-r from-accent/10 via-secondary/8 to-primary/10 blur-[100px]" />
       
       <div className="container mx-auto px-6 relative z-10">
         <div className="soft-card p-12 md:p-20 text-center max-w-4xl mx-auto">
@@ -31,6 +31,7 @@ const CTASection = () => {
             <Button 
               size="lg" 
               className="bg-foreground text-background hover:bg-foreground/90 rounded-full px-10 py-6"
+              onClick={() => window.open('https://wa.me/34695384318', '_blank')}
             >
               {t('cta.ctaPrimary')}
               <ArrowRight className="ml-2 w-5 h-5" />
@@ -38,7 +39,7 @@ const CTASection = () => {
             <Button 
               size="lg" 
               variant="outline"
-              className="border-foreground/20 text-foreground hover:bg-foreground/5 rounded-full px-10 py-6"
+              className="border-primary/40 text-primary hover:border-primary hover:bg-primary/10 hover:text-white rounded-full px-10 py-6 transition-all duration-300"
             >
               {t('cta.ctaSecondary')}
             </Button>

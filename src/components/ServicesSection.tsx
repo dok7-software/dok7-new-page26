@@ -33,7 +33,7 @@ const ServicesSection = () => {
   ];
 
   return (
-    <section id="solutions" className="py-32 relative overflow-hidden bg-muted/30">
+    <section id="solutions" className="py-32 relative overflow-hidden">
       {/* Soft organic shapes */}
       <div className="absolute top-20 left-10 w-[300px] h-[300px] rounded-full bg-secondary/10 blur-[80px]" />
       <div className="absolute bottom-20 right-10 w-[250px] h-[250px] rounded-full bg-accent/10 blur-[80px]" />
@@ -51,7 +51,7 @@ const ServicesSection = () => {
           </div>
           <Button 
             variant="outline" 
-            className="border-foreground/20 text-foreground hover:bg-foreground/5 rounded-full self-start lg:self-auto"
+            className="border-primary/40 text-primary hover:border-primary hover:bg-primary/10 hover:text-white rounded-full self-start lg:self-auto transition-all duration-300"
           >
             {t('services.cta')}
             <ArrowRight className="ml-2 w-4 h-4" />

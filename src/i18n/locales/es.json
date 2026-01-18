@@ -29,6 +29,112 @@
       "sustainability": "Sostenibilidad"
     }
   },
+  "transform": {
+    "label": "Nuestra Filosofía",
+    "headline": "Centrado en las personas",
+    "headlineLight": "en cada paso",
+    "description": "Creemos que la tecnología debe sentirse como alivio, no como complejidad. Nuestro enfoque pone a las personas en el centro de cada decisión.",
+    "values": {
+      "empathy": {
+        "title": "Empatía Primero",
+        "description": "Escuchamos profundamente para entender los verdaderos desafíos que enfrentan las personas, diseñando soluciones que realmente sirvan a las necesidades humanas."
+      },
+      "innovation": {
+        "title": "Innovación Silenciosa",
+        "description": "La tecnología debe funcionar sin problemas en segundo plano, mejorando la vida sin demandar atención."
+      },
+      "trustworthy": {
+        "title": "Confiable y Claro",
+        "description": "Creemos en la comunicación transparente y en construir relaciones duraderas basadas en la confiabilidad."
+      }
+    },
+    "stats": {
+      "satisfaction": "Satisfacción del cliente",
+      "years": "Años de cuidado",
+      "lives": "Vidas mejoradas"
+    }
+  },
+  "process": {
+    "label": "Nuestro Proceso",
+    "headline": "Un enfoque gentil",
+    "headlineLight": "para resultados poderosos",
+    "description": "No creemos en plazos agresivos o complejidad abrumadora. Nuestro proceso está diseñado para sentirse natural, respetuoso de tu tiempo y enfocado en un cambio positivo duradero.",
+    "cta": "Comienza tu Historia",
+    "steps": {
+      "step1": {
+        "title": "Escuchar y Entender",
+        "description": "Comenzamos entendiendo verdaderamente tus desafíos, tu equipo y tu visión para una mejor forma de trabajar."
+      },
+      "step2": {
+        "title": "Diseñar con Cuidado",
+        "description": "Las soluciones se crean con empatía, enfocándose en lo que realmente mejorará las experiencias diarias."
+      },
+      "step3": {
+        "title": "Construir con Consideración",
+        "description": "Desarrollamos con precisión y cuidado, asegurándonos de que cada detalle sirva a las personas que lo usarán."
+      },
+      "step4": {
+        "title": "Apoyar y Crecer",
+        "description": "Nuestra relación continúa como socios, ayudando a que tus soluciones evolucionen con tus necesidades."
+      }
+    }
+  },
+  "stories": {
+    "label": "Historias",
+    "headline": "Personas reales,",
+    "headlineLight": "alivio real",
+    "cta": "Leer Todas las Historias",
+    "testimonials": {
+      "testimonial1": {
+        "quote": "DOK7 no solo nos construyó software, nos devolvió las tardes a nuestro equipo.",
+        "name": "María Santos",
+        "role": "Directora de Operaciones",
+        "company": "Sunrise Healthcare",
+        "impact": "40% menos tiempo en tareas administrativas"
+      },
+      "testimonial2": {
+        "quote": "Finalmente, tecnología que se siente como si fuera hecha por personas que realmente se preocupan.",
+        "name": "James Chen",
+        "role": "Fundador",
+        "company": "EduConnect",
+        "impact": "Satisfacción del equipo aumentó 65%"
+      },
+      "testimonial3": {
+        "quote": "La transformación más gentil que hemos experimentado. Y la más efectiva.",
+        "name": "Anna Kowalski",
+        "role": "CEO",
+        "company": "Wellspring Wellness",
+        "impact": "Atendiendo 3x más clientes"
+      }
+    }
+  },
+  "insights": {
+    "label": "Perspectivas",
+    "headline": "Pensamientos sobre",
+    "headlineLight": "tecnología que cuida",
+    "cta": "Ver Todas las Perspectivas",
+    "readMore": "Leer más",
+    "articles": {
+      "article1": {
+        "category": "Bienestar",
+        "title": "La revolución silenciosa: automatización que respeta tu tiempo",
+        "excerpt": "Cómo la tecnología reflexiva puede devolvernos los momentos que más importan en nuestras vidas.",
+        "readTime": "4 min de lectura"
+      },
+      "article2": {
+        "category": "Centrado en Humanos",
+        "title": "Por qué la empatía es nuestra herramienta más importante",
+        "excerpt": "Construir tecnología que realmente sirva a las personas comienza con entender su experiencia vivida.",
+        "readTime": "6 min de lectura"
+      },
+      "article3": {
+        "category": "Equipos",
+        "title": "Creando espacio para la creatividad en flujos de trabajo automatizados",
+        "excerpt": "Cuando las tareas rutinarias se manejan solas, los equipos descubren nuevas posibilidades para la innovación.",
+        "readTime": "5 min de lectura"
+      }
+    }
+  },
   "services": {
     "label": "Lo que Creamos",
     "headline": "Automatización como",
@@ -58,7 +164,15 @@
     "headlineLight": "que se siente como alivio?",
     "subtitle": "Tengamos una conversación tranquila sobre cómo podemos ayudar a tu equipo a recuperar su tiempo y enfocarse en lo que realmente importa.",
     "ctaPrimary": "Inicia una Conversación",
-    "ctaSecondary": "hello@dok7.com"
+    "ctaSecondary": "contacto@dok7.io"
+  },
+  "floatingCTA": {
+    "headline": "Recupera tiempo para lo que importa",
+    "subtitle": "Automatiza procesos, simplifica operaciones y recupera tiempo valioso para enfocarte en lo que realmente importa.",
+    "benefit1": "Soluciones personalizadas para tu industria",
+    "benefit2": "Implementación rápida y sin fricciones",
+    "benefit3": "Soporte continuo y actualizaciones",
+    "cta": "Quiero una consulta gratuita"
   },
   "customDevelopment": {
     "label": "Soluciones de Software",
@@ -253,6 +367,14 @@
           "cases": "Casos de Estudio",
           "newsletter": "Boletín",
           "contact": "Contacto"
+        }
+      },
+      "support": {
+        "title": "Soporte",
+        "links": {
+          "legal": "Aviso Legal",
+          "privacy": "Política de Privacidad",
+          "cookies": "Política de Cookies"
         }
       }
     },

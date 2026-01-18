@@ -1,27 +1,30 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const AIShowcase = () => {
+  const { t } = useTranslation();
+
   const steps = [
     {
       number: "01",
-      title: "Listen & Understand",
-      description: "We begin by truly understanding your challenges, your people, and your vision for a better way of working."
+      title: t('process.steps.step1.title'),
+      description: t('process.steps.step1.description')
     },
     {
       number: "02",
-      title: "Design with Care",
-      description: "Solutions are crafted with empathy, focusing on what will genuinely improve daily experiences."
+      title: t('process.steps.step2.title'),
+      description: t('process.steps.step2.description')
     },
     {
       number: "03",
-      title: "Build Thoughtfully",
-      description: "We develop with precision and care, ensuring every detail serves the people who will use it."
+      title: t('process.steps.step3.title'),
+      description: t('process.steps.step3.description')
     },
     {
       number: "04",
-      title: "Support & Grow",
-      description: "Our relationship continues as partners, helping your solutions evolve with your needs."
+      title: t('process.steps.step4.title'),
+      description: t('process.steps.step4.description')
     }
   ];
 
@@ -34,20 +37,18 @@ const AIShowcase = () => {
         <div className="grid lg:grid-cols-2 gap-20 items-center">
           {/* Left Content */}
           <div>
-            <p className="text-primary text-sm tracking-widest mb-6 uppercase">Our Process</p>
+            <p className="text-primary text-sm tracking-widest mb-6 uppercase">{t('process.label')}</p>
             <h2 className="font-display text-4xl md:text-5xl text-foreground mb-6">
-              A gentle approach
+              {t('process.headline')}
               <br />
-              <span className="font-display-light text-muted-foreground">to powerful results</span>
+              <span className="font-display-light text-muted-foreground">{t('process.headlineLight')}</span>
             </h2>
             <p className="text-lg text-muted-foreground mb-10 leading-relaxed">
-              We don't believe in aggressive timelines or overwhelming complexity. 
-              Our process is designed to feel natural, respectful of your time, 
-              and focused on lasting positive change.
+              {t('process.description')}
             </p>
 
             <Button className="bg-foreground text-background hover:bg-foreground/90 rounded-full px-8">
-              Begin Your Story
+              {t('process.cta')}
               <ArrowRight className="ml-2 w-4 h-4" />
             </Button>
           </div>

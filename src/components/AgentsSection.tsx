@@ -3,7 +3,7 @@ import { ArrowRight, Clock, Smile, Sun } from "lucide-react";
 
 const AgentsSection = () => {
   return (
-    <section className="py-32 relative overflow-hidden bg-muted/30">
+    <section className="py-32 relative overflow-hidden">
       {/* Soft organic background */}
       <div className="absolute top-0 left-1/4 w-[400px] h-[400px] rounded-full bg-accent/15 blur-[100px] animate-float-gentle" />
       <div className="absolute bottom-0 right-1/4 w-[350px] h-[350px] rounded-full bg-secondary/15 blur-[100px] animate-float-gentle" style={{ animationDelay: '3s' }} />

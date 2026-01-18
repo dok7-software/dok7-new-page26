@@ -1,30 +1,33 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const InsightsSection = () => {
+  const { t } = useTranslation();
+
   const articles = [
     {
-      category: "Wellbeing",
-      title: "The quiet revolution: automation that respects your time",
-      excerpt: "How thoughtful technology can give us back the moments that matter most in our lives.",
-      readTime: "4 min read"
+      category: t('insights.articles.article1.category'),
+      title: t('insights.articles.article1.title'),
+      excerpt: t('insights.articles.article1.excerpt'),
+      readTime: t('insights.articles.article1.readTime')
     },
     {
-      category: "Human-Centered",
-      title: "Why empathy is our most important tool",
-      excerpt: "Building technology that truly serves people starts with understanding their lived experience.",
-      readTime: "6 min read"
+      category: t('insights.articles.article2.category'),
+      title: t('insights.articles.article2.title'),
+      excerpt: t('insights.articles.article2.excerpt'),
+      readTime: t('insights.articles.article2.readTime')
     },
     {
-      category: "Teams",
-      title: "Creating space for creativity in automated workflows",
-      excerpt: "When routine tasks handle themselves, teams discover new possibilities for innovation.",
-      readTime: "5 min read"
+      category: t('insights.articles.article3.category'),
+      title: t('insights.articles.article3.title'),
+      excerpt: t('insights.articles.article3.excerpt'),
+      readTime: t('insights.articles.article3.readTime')
     }
   ];
 
   return (
-    <section className="py-32 relative overflow-hidden bg-muted/30">
+    <section className="py-32 relative overflow-hidden">
       {/* Soft shapes */}
       <div className="absolute top-0 left-0 w-[250px] h-[250px] rounded-full bg-secondary/10 blur-[60px]" />
       
@@ -32,18 +35,18 @@ const InsightsSection = () => {
         {/* Section Header */}
         <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 mb-16">
           <div>
-            <p className="text-primary text-sm tracking-widest mb-6 uppercase">Insights</p>
+            <p className="text-primary text-sm tracking-widest mb-6 uppercase">{t('insights.label')}</p>
             <h2 className="font-display text-4xl md:text-5xl text-foreground">
-              Thoughts on
+              {t('insights.headline')}
               <br />
-              <span className="font-display-light text-muted-foreground">technology that cares</span>
+              <span className="font-display-light text-muted-foreground">{t('insights.headlineLight')}</span>
             </h2>
           </div>
           <Button 
             variant="outline" 
-            className="border-foreground/20 text-foreground hover:bg-foreground/5 rounded-full self-start lg:self-auto"
+            className="border-primary/40 text-primary hover:border-primary hover:bg-primary/10 hover:text-white rounded-full self-start lg:self-auto transition-all duration-300"
           >
-            View All Insights
+            {t('insights.cta')}
             <ArrowRight className="ml-2 w-4 h-4" />
           </Button>
         </div>
@@ -72,7 +75,7 @@ const InsightsSection = () => {
               </p>
               
               <div className="mt-6 flex items-center text-foreground text-sm group-hover:text-primary transition-colors">
-                Read more
+                {t('insights.readMore')}
                 <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </div>
             </article>
