@@ -25,7 +25,7 @@ const TransformSection = () => {
   ];
 
   return (
-    <section id="about" className="py-16 md:py-32 relative overflow-hidden">
+    <section id="about" className="pt-8 md:pt-16 pb-16 md:pb-32 relative overflow-hidden">
       {/* Soft background gradient */}
       <div className="absolute top-0 right-0 w-[400px] h-[400px] rounded-full bg-accent/10 blur-[100px]" />
       

@@ -149,6 +149,11 @@
     background-color: hsl(221 42% 22%);
     color: hsl(267 25% 88%);
   }
+
+  .technologies-scroll {
+    width: max-content;
+    animation: scroll-slow 80s linear infinite;
+  }
 }
 
 @layer utilities {
@@ -174,6 +179,15 @@
   50% {
     opacity: 0.6;
     transform: scale(1.05);
+  }
+}
+
+@keyframes scroll-slow {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-50%));
   }
 }
 

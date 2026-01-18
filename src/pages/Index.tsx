@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
+import TechnologiesCarousel from "@/components/TechnologiesCarousel";
 import TransformSection from "@/components/TransformSection";
 import ServicesSection from "@/components/ServicesSection";
 import AIShowcase from "@/components/AIShowcase";
@@ -17,6 +18,7 @@ const Index = () => {
         {/* Sección 1 - Fondo Claro (Hero + Transform) */}
         <div className="bg-section-light">
           <HeroSection />
+          <TechnologiesCarousel />
           <TransformSection />
         </div>
         
