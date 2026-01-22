@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Sparkles, MessageCircle } from "lucide-react";
+import { ArrowRight, Sparkles } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
 const CTASection = () => {
@@ -23,7 +23,7 @@ const CTASection = () => {
                   <span className="gradient-text">{t('cta.headline')}</span>
                 </h2>
                 
-                <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto mb-12">
+                <p className="text-lg md:text-xl text-white leading-relaxed max-w-2xl mx-auto mb-12">
                   {t('cta.subtitle')}
                 </p>
                 
@@ -33,7 +33,6 @@ const CTASection = () => {
                     size="lg" 
                     className="bg-gradient-to-r from-primary via-secondary/80 to-primary hover:from-primary/90 hover:via-secondary/70 hover:to-primary/90 text-white rounded-full px-10 py-7 text-lg font-semibold shadow-xl hover:shadow-2xl transition-all duration-300 w-full sm:w-auto group"
                   >
-                    <MessageCircle className="mr-2 w-5 h-5 group-hover:rotate-12 transition-transform" />
                     {t('cta.ctaPrimary')}
                     <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                   </Button>

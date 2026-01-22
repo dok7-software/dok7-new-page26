@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   const { t } = useTranslation();
-  const logoSrc = '/images/logo completo a color sin fondo.png';
+  const logoSrc = '/images/logo cuadrado blanco sin fondo.png';
 
   return (
     <footer className="bg-foreground text-background py-16">
