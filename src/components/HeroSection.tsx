@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { HeroCarousel } from "./HeroCarousel";
+import TechnologiesCarousel from "./TechnologiesCarousel";
 
 const HeroSection = () => {
   const { t } = useTranslation();
@@ -52,9 +53,12 @@ const HeroSection = () => {
         </div>
 
         {/* Trusted by */}
-        <div className="pt-12 border-t border-border/50">
-          <p className="text-sm text-muted-foreground text-center">{t('hero.trustedBy')}</p>
+        <div className="pt-4 pb-2">
+          <p className="text-4xl text-muted-foreground text-center">{t('hero.trustedBy')}</p>
         </div>
+
+        {/* Technologies Carousel */}
+        <TechnologiesCarousel />
       </div>
     </section>
   );

@@ -64,7 +64,7 @@ const TechnologiesCarousel = () => {
   return (
     <>
       <div 
-        className="w-full overflow-hidden pt-12 mt-8 md:mt-16 mb-8 md:mb-16"
+        className="w-full overflow-hidden pt-4 mt-2 md:mt-4 mb-8 md:mb-16"
         onMouseEnter={handleCarouselMouseEnter}
         onMouseLeave={handleCarouselMouseLeave}
       >

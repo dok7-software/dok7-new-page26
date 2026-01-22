@@ -21,7 +21,7 @@ const Header = () => {
       ]
     },
     { label: t('header.nav.about'), href: "#about" },
-    { label: t('header.nav.process'), href: "#process" },
+    { label: t('header.nav.process'), href: "/proceso" },
     { label: t('header.nav.stories'), href: "#stories" },
     { label: t('header.nav.contact'), href: "#contact" },
   ];
@@ -75,13 +75,23 @@ const Header = () => {
                   )}
                 </div>
               ) : (
-                <a
-                  key={item.label}
-                  href={item.href}
-                  className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-300"
-                >
-                  {item.label}
-                </a>
+                item.href.startsWith('/') ? (
+                  <Link
+                    key={item.label}
+                    to={item.href}
+                    className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-300"
+                  >
+                    {item.label}
+                  </Link>
+                ) : (
+                  <a
+                    key={item.label}
+                    href={item.href}
+                    className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-300"
+                  >
+                    {item.label}
+                  </a>
+                )
               )
             ))}
           </nav>
@@ -136,14 +146,25 @@ const Header = () => {
                     )}
                   </div>
                 ) : (
-                  <a
-                    key={item.label}
-                    href={item.href}
-                    className="py-2 text-muted-foreground hover:text-foreground transition-colors"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    {item.label}
-                  </a>
+                  item.href.startsWith('/') ? (
+                    <Link
+                      key={item.label}
+                      to={item.href}
+                      className="py-2 text-muted-foreground hover:text-foreground transition-colors"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      {item.label}
+                    </Link>
+                  ) : (
+                    <a
+                      key={item.label}
+                      href={item.href}
+                      className="py-2 text-muted-foreground hover:text-foreground transition-colors"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      {item.label}
+                    </a>
+                  )
                 )
               ))}
               <Button className="mt-3 md:mt-4 bg-foreground text-background rounded-full text-sm py-2">

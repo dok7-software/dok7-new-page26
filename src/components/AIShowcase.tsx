@@ -1,9 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router-dom";
 
 const AIShowcase = () => {
   const { t } = useTranslation();
+  const navigate = useNavigate();
 
   const steps = [
     {
@@ -51,7 +53,25 @@ const AIShowcase = () => {
               {t('process.description')}
             </p>
 
-            <Button className="bg-foreground text-background hover:bg-foreground/90 rounded-full px-8">
+            <Button 
+              className="bg-foreground text-background hover:bg-foreground/90 rounded-full px-8"
+              onClick={() => {
+                if (window.location.pathname === '/') {
+                  const element = document.getElementById('contact');
+                  if (element) {
+                    element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                  }
+                } else {
+                  navigate('/');
+                  setTimeout(() => {
+                    const element = document.getElementById('contact');
+                    if (element) {
+                      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                  }, 100);
+                }
+              }}
+            >
               {t('process.cta')}
               <ArrowRight className="ml-2 w-4 h-4" />
             </Button>

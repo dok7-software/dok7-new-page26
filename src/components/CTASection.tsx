@@ -18,7 +18,7 @@ const CTASection = () => {
             <span className="text-3xl">💬</span>
           </div>
           
-          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl mb-12 text-foreground">
+          <h2 className="font-display text-4xl md:text-5xl lg:text-5xl mb-12 text-foreground">
             {t('cta.headline')}
             <br />
             <span className="font-display-light text-muted-foreground">{t('cta.headlineLight')}</span>

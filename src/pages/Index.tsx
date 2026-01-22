@@ -1,10 +1,7 @@
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
-import TechnologiesCarousel from "@/components/TechnologiesCarousel";
-import TransformSection from "@/components/TransformSection";
 import TransformSectionTimeline from "@/components/TransformSectionTimeline";
 import ServicesSection from "@/components/ServicesSection";
-import AIShowcase from "@/components/AIShowcase";
 import CaseStudySection from "@/components/CaseStudySection";
 import InsightsSection from "@/components/InsightsSection";
 import CTASection from "@/components/CTASection";
@@ -19,15 +16,12 @@ const Index = () => {
         {/* Sección 1 - Fondo Claro (Hero + Transform) */}
         <div className="bg-section-light">
           <HeroSection />
-          <TechnologiesCarousel />
-          <TransformSection />
           <TransformSectionTimeline />
         </div>
         
-        {/* Sección 2 - Fondo Oscuro (Services + AIShowcase) */}
+        {/* Sección 2 - Fondo Oscuro (Services) */}
         <div className="bg-section-dark">
           <ServicesSection />
-          <AIShowcase />
         </div>
         
         {/* Sección 3 - Transición con Floating CTA */}

@@ -31,7 +31,7 @@
   },
   "transform": {
     "label": "Nuestra Filosofía",
-    "headline": "Nuestra escencia",
+    "headline": "Nuestra esencia",
     "headlineLight": "en cada paso",
     "description": "Creemos que la tecnología debe sentirse como alivio, no como complejidad. Nuestro enfoque pone a las personas en el centro de cada decisión.",
     "values": {
@@ -63,7 +63,7 @@
     }
   },
   "process": {
-    "label": "¿Como lo hacemos?",
+    "label": "Nuestro Proceso",
     "headline": "¿Como lo hacemos?",
     "headlineLight": "",
     "description": "Diseñado para adaptarse a las personas, al contexto del negocio y al momento tecnológico en el que se encuentra cada empresa.",

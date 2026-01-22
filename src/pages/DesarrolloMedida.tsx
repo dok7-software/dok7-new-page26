@@ -223,7 +223,7 @@ const DesarrolloMedida = () => {
           
           <div className="container mx-auto px-6 relative z-10">
             <div className="max-w-3xl mx-auto text-center">
-              <h2 className="font-display text-4xl md:text-6xl mb-6 text-foreground">
+              <h2 className="font-display text-4xl md:text-5xl mb-6 text-foreground">
                 {t('customDevelopment.cta.headline')}
                 <br />
                 <span className="font-display-light text-muted-foreground">

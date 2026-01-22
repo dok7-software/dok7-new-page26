@@ -89,7 +89,7 @@ const TransformSectionTimeline = () => {
       <div className="container mx-auto px-6 relative z-10">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-20">
-          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-foreground mb-6">
+          <h2 className="font-display text-4xl md:text-5xl lg:text-5xl text-foreground mb-6">
             {t('transform.headline')}
           </h2>
         </div>
@@ -100,7 +100,7 @@ const TransformSectionTimeline = () => {
           <div className="absolute left-1/2 top-0 bottom-0 w-0.5 bg-border/30 hidden md:block transform -translate-x-1/2" />
 
           {/* Timeline Items */}
-          <div className="space-y-8 md:space-y-12">
+          <div className="space-y-2 md:space-y-4">
             {values.map((value, index) => {
               const isEven = index % 2 === 0;
               return (
@@ -109,7 +109,7 @@ const TransformSectionTimeline = () => {
                   ref={(el) => {
                     itemsRef.current[index] = el;
                   }}
-                  className={`relative flex flex-col md:flex-row items-center gap-8 ${
+                  className={`relative flex flex-col md:flex-row items-center gap-4 ${
                     isEven ? "md:flex-row" : "md:flex-row-reverse"
                   }`}
                 >
