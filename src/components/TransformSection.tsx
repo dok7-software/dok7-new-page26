@@ -1,28 +1,50 @@
 import { useTranslation } from "react-i18next";
+import Autoplay from "embla-carousel-autoplay";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselPrevious,
+  CarouselNext,
+} from "@/components/ui/carousel";
 
 const TransformSection = () => {
   const { t } = useTranslation();
 
   const values = [
     {
-      title: t('transform.values.empathy.title'),
-      description: t('transform.values.empathy.description')
-    },
-    {
       title: t('transform.values.innovation.title'),
       description: t('transform.values.innovation.description')
     },
     {
-      title: t('transform.values.trustworthy.title'),
-      description: t('transform.values.trustworthy.description')
+      title: t('transform.values.clarity.title'),
+      description: t('transform.values.clarity.description')
+    },
+    {
+      title: t('transform.values.evolution.title'),
+      description: t('transform.values.evolution.description')
+    },
+    {
+      title: t('transform.values.agility.title'),
+      description: t('transform.values.agility.description')
+    },
+    {
+      title: t('transform.values.collaboration.title'),
+      description: t('transform.values.collaboration.description')
     }
   ];
 
   const stats = [
-    { value: "98%", label: t('transform.stats.satisfaction') },
-    { value: "15+", label: t('transform.stats.years') },
+    { value: "100%", label: t('transform.stats.satisfaction') },
+    { value: "20+", label: t('transform.stats.years') },
     { value: "200+", label: t('transform.stats.lives') },
   ];
+
+  const autoplayPlugin = Autoplay({
+    delay: 5000,
+    stopOnInteraction: false,
+    stopOnMouseEnter: true,
+  });
 
   return (
     <section id="about" className="pt-8 md:pt-16 pb-16 md:pb-32 relative overflow-hidden">
@@ -32,35 +54,39 @@ const TransformSection = () => {
       <div className="container mx-auto px-6 relative z-10">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-20">
-          <p className="text-primary text-sm tracking-widest mb-6 uppercase">{t('transform.label')}</p>
           <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-foreground mb-6">
             {t('transform.headline')}
-            <br />
-            <span className="font-display-light text-muted-foreground">{t('transform.headlineLight')}</span>
           </h2>
-          <p className="text-muted-foreground text-lg leading-relaxed">
-            {t('transform.description')}
-          </p>
         </div>
 
-        {/* Values */}
-        <div className="grid md:grid-cols-3 gap-8 mb-12 md:mb-24">
-          {values.map((value, index) => (
-            <div 
-              key={index}
-              className="soft-card p-10 text-center hover:shadow-lg transition-shadow duration-500"
-            >
-              <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-gradient-to-br from-accent/30 via-secondary/20 to-primary/20 flex items-center justify-center">
-                <span className="text-2xl">{index === 0 ? '💛' : index === 1 ? '✨' : '🤝'}</span>
-              </div>
-              <h3 className="font-display text-xl mb-4 text-foreground">
-                {value.title}
-              </h3>
-              <p className="text-muted-foreground leading-relaxed">
-                {value.description}
-              </p>
-            </div>
-          ))}
+        {/* Values Carousel */}
+        <div className="mb-12 md:mb-24 max-w-6xl mx-auto relative">
+          <Carousel
+            opts={{
+              align: "start",
+              loop: true,
+              slidesToScroll: 1,
+            }}
+            plugins={[autoplayPlugin]}
+            className="w-full"
+          >
+            <CarouselContent className="-ml-2 md:-ml-4">
+              {values.map((value, index) => (
+                <CarouselItem key={index} className="pl-2 md:pl-4 basis-full md:basis-1/2">
+                  <div className="soft-card p-10 text-center hover:shadow-lg transition-shadow duration-500">
+                    <h3 className="font-display text-xl mb-4 text-foreground">
+                      {value.title}
+                    </h3>
+                    <p className="text-muted-foreground leading-relaxed">
+                      {value.description}
+                    </p>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="hidden md:flex -left-12" />
+            <CarouselNext className="hidden md:flex -right-12" />
+          </Carousel>
         </div>
 
         {/* Stats */}

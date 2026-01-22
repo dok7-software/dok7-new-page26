@@ -37,7 +37,7 @@ const FloatingCTASection = () => {
                   <h2 className="text-[#182547] text-3xl md:text-4xl lg:text-5xl font-bold mb-4 leading-tight">
                     {t('floatingCTA.headline')}
                   </h2>
-                  <p className="text-gray-600 text-lg leading-relaxed">
+                  <p className="text-gray-600 text-lg leading-relaxed whitespace-pre-line">
                     {t('floatingCTA.subtitle')}
                   </p>
                 </div>

@@ -15,8 +15,8 @@
     "cta": "Let's Talk"
   },
   "hero": {
-    "headline": "Technology",
-    "headlineHighlight": "that cares",
+    "headline": "Build whats grows",
+    "headlineHighlight": "with you",
     "subtitle": "We create human-centered automation that works quietly to improve people's lives. Accessible, empathetic, and trustworthy solutions that reduce stress and free your time.",
     "ctaPrimary": "Start Your Journey",
     "ctaSecondary": "Discover Our Approach",
@@ -55,34 +55,34 @@
     }
   },
   "process": {
-    "label": "Our Process",
-    "headline": "A gentle approach",
-    "headlineLight": "to powerful results",
-    "description": "We don't believe in aggressive timelines or overwhelming complexity. Our process is designed to feel natural, respectful of your time, and focused on lasting positive change.",
+    "label": "How do we do it?",
+    "headline": "How do we do it?",
+    "headlineLight": "",
+    "description": "Designed to adapt to people, business context, and the technological moment each company is in.",
     "cta": "Begin Your Story",
     "steps": {
       "step1": {
-        "title": "Listen & Understand",
-        "description": "We begin by truly understanding your challenges, your people, and your vision for a better way of working."
+        "title": "Listen and understand",
+        "description": "Before proposing, we listen. We understand the business, the real challenges, the team, and the decisions that have already been made. To build optimal solutions."
       },
       "step2": {
-        "title": "Design with Care",
-        "description": "Solutions are crafted with empathy, focusing on what will genuinely improve daily experiences."
+        "title": "Provide clarity",
+        "description": "We analyze scenarios, priorities, and risks to help make decisions with judgment and confidence. It's not about doing more, but doing what's right."
       },
       "step3": {
-        "title": "Build Thoughtfully",
-        "description": "We develop with precision and care, ensuring every detail serves the people who will use it."
+        "title": "Build with intention",
+        "description": "We develop solutions designed to last. Each system is built with care, stability, and growth vision, without compromising the future of the business."
       },
       "step4": {
-        "title": "Support & Grow",
-        "description": "Our relationship continues as partners, helping your solutions evolve with your needs."
+        "title": "Accompany evolution",
+        "description": "Our work doesn't end with delivery. We continue to accompany teams so solutions evolve alongside the business. We grow when our clients grow."
       }
     }
   },
   "stories": {
     "label": "Stories",
-    "headline": "Real people,",
-    "headlineLight": "real relief",
+    "headline": "Real solutions",
+    "headlineLight": "",
     "cta": "Read All Stories",
     "testimonials": {
       "testimonial1": {
@@ -109,10 +109,10 @@
     }
   },
   "insights": {
-    "label": "Insights",
-    "headline": "Thoughts on",
-    "headlineLight": "technology that cares",
-    "cta": "View All Insights",
+    "label": "Blog",
+    "headline": "Information that helps us grow",
+    "headlineLight": "",
+    "cta": "See more",
     "readMore": "Read more",
     "articles": {
       "article1": {
@@ -139,40 +139,40 @@
     "label": "What We Create",
     "headline": "Automation as",
     "headlineLight": "relief",
-    "cta": "Explore All Solutions",
+    "cta": "Start Growing",
     "items": {
       "wellbeing": {
-        "title": "Wellbeing Automation",
-        "description": "Systems that free people from repetitive tasks, giving them time for what matters most in their lives."
+        "title": "Automation that liberates",
+        "description": "We design systems that eliminate repetitive tasks. Processes that once required constant attention now run smoothly and reliably, freeing time and energy for what really matters: thinking, deciding, and growing the business."
       },
       "intelligent": {
-        "title": "Intelligent Solutions",
-        "description": "Smart technology that learns and adapts, always working quietly in the background to serve you better."
+        "title": "Intelligent solutions",
+        "description": "We analyze the context, objectives, and current state of the business to recommend solutions that make sense today and continue working tomorrow."
       },
       "trusted": {
-        "title": "Trusted Systems",
-        "description": "Secure, reliable platforms built with transparency and care for your data and peace of mind."
+        "title": "Reliable systems",
+        "description": "We build solutions designed to sustain growth without risking operations. We care for stability, information security, and predictability of each system, so technical decisions can be made with confidence."
       },
       "team": {
-        "title": "Team Empowerment",
-        "description": "Tools that bring teams together, fostering collaboration and genuine human connection."
+        "title": "Team empowerment",
+        "description": "We bring experience, judgment, and clarity. We integrate as part of the team from day one so they feel supported."
       }
     }
   },
   "cta": {
-    "headline": "Ready for technology",
-    "headlineLight": "that feels like relief?",
+    "headline": "Are you ready to grow?",
+    "headlineLight": "",
     "subtitle": "Let's have a gentle conversation about how we can help your team reclaim their time and focus on what truly matters.",
     "ctaPrimary": "Start a Conversation",
     "ctaSecondary": "contacto@dok7.io"
   },
   "floatingCTA": {
-    "headline": "Time back for what matters",
-    "subtitle": "Automate processes, simplify operations and reclaim valuable time to focus on what really matters.",
-    "benefit1": "Custom solutions for your industry",
-    "benefit2": "Fast and frictionless implementation",
-    "benefit3": "Continuous support and updates",
-    "cta": "I want a free consultation"
+    "headline": "Let's build the next step",
+    "subtitle": "Tell us where your system is at and what you'd like to improve.\nA good conversation can give you the clarity you're looking for.",
+    "benefit1": "Customized solutions",
+    "benefit2": "Efficient implementation",
+    "benefit3": "Continuous support",
+    "cta": "Let's talk"
   },
   "customDevelopment": {
     "label": "Software Solutions",
@@ -340,32 +340,14 @@
     }
   },
   "footer": {
-    "description": "Technology that works quietly to improve people's lives. Human-centered automation you can trust.",
+    "description": "Technology with the power to transform lives",
     "sections": {
-      "solutions": {
-        "title": "Solutions",
-        "links": {
-          "wellbeing": "Wellbeing Automation",
-          "intelligent": "Intelligent Systems",
-          "trusted": "Trusted Platforms",
-          "team": "Team Empowerment"
-        }
-      },
-      "company": {
-        "title": "Company",
-        "links": {
-          "about": "About Us",
-          "process": "Our Process",
-          "stories": "Stories",
-          "careers": "Careers"
-        }
-      },
       "resources": {
         "title": "Resources",
         "links": {
-          "insights": "Insights",
-          "cases": "Case Studies",
-          "newsletter": "Newsletter",
+          "home": "Home",
+          "services": "Services",
+          "about": "About Us",
           "contact": "Contact"
         }
       },
@@ -376,14 +358,15 @@
           "privacy": "Privacy Policy",
           "cookies": "Cookie Policy"
         }
+      },
+      "company": {
+        "title": "Company",
+        "address": "Avenida Blasco Ibañez 25, Valencia",
+        "email": "contacto@dok7.io",
+        "phone": "+ 34 674 32 71 81"
       }
     },
-    "copyright": "© 2026 DOK7 Software Solutions. Made with care.",
-    "social": {
-      "linkedin": "LinkedIn",
-      "twitter": "Twitter",
-      "instagram": "Instagram"
-    }
+    "copyright": "Copyright @2024, Dok7 All rights reserved"
   }
 }
 

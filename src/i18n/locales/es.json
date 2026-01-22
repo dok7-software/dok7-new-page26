@@ -12,15 +12,15 @@
         "softwareIntegrations": "Integraciones de Software"
       }
     },
-    "cta": "Hablemos"
+    "cta": "Conversemos"
   },
   "hero": {
-    "headline": "Tecnología",
-    "headlineHighlight": "que cuida",
+    "headline": "Construye lo que crece",
+    "headlineHighlight": "contigo",
     "subtitle": "Creamos automatización centrada en las personas que trabaja en silencio para mejorar sus vidas. Soluciones accesibles, empáticas y confiables que reducen el estrés y liberan tu tiempo.",
-    "ctaPrimary": "Comienza tu Experiencia",
+    "ctaPrimary": "Comienza a crecer",
     "ctaSecondary": "Descubre Nuestro Enfoque",
-    "trustedBy": "La confianza de equipos que valoran a las personas",
+    "trustedBy": "Tecnología que cuida tu crecimiento",
     "sectors": {
       "healthcare": "Salud",
       "education": "Educación",
@@ -31,58 +31,66 @@
   },
   "transform": {
     "label": "Nuestra Filosofía",
-    "headline": "Centrado en las personas",
+    "headline": "Nuestra escencia",
     "headlineLight": "en cada paso",
     "description": "Creemos que la tecnología debe sentirse como alivio, no como complejidad. Nuestro enfoque pone a las personas en el centro de cada decisión.",
     "values": {
-      "empathy": {
-        "title": "Empatía Primero",
-        "description": "Escuchamos profundamente para entender los verdaderos desafíos que enfrentan las personas, diseñando soluciones que realmente sirvan a las necesidades humanas."
-      },
       "innovation": {
-        "title": "Innovación Silenciosa",
-        "description": "La tecnología debe funcionar sin problemas en segundo plano, mejorando la vida sin demandar atención."
+        "title": "Innovación con propósito",
+        "description": "Innovar no es correr detrás de lo nuevo. Es detenerse, entender el contexto y decidir qué vale la pena cambiar y qué no. Innovamos cuando sabemos que ese cambio va a liberar tiempo, optimizar procesos o abrir nuevas posibilidades reales para las personas que usan los sistemas cada día."
       },
-      "trustworthy": {
-        "title": "Confiable y Claro",
-        "description": "Creemos en la comunicación transparente y en construir relaciones duraderas basadas en la confiabilidad."
+      "clarity": {
+        "title": "Claridad técnica",
+        "description": "A veces la complejidad genera dudas y paraliza decisiones. Por eso trabajamos para que la tecnología se entienda, se pueda explicar y se pueda defender. La claridad no es simplificar de más: es dar visibilidad, criterio y seguridad a quienes tienen que decidir."
+      },
+      "evolution": {
+        "title": "Evolución continua",
+        "description": "Nada que crece permanece igual. Los sistemas y los equipos cambian con el tiempo. Pensamos en esta evolución inevitable para que avanzar no implique romper, rehacer o empezar de cero cada vez que el negocio da un paso más."
+      },
+      "agility": {
+        "title": "Agilidad",
+        "description": "La verdadera agilidad no vive en la velocidad, sino en la capacidad de responder sin perder estabilidad. Ser ágiles es movernos con intención, priorizar lo importante y adaptarnos con facilidad. Es avanzar con ritmo, no con prisa."
+      },
+      "collaboration": {
+        "title": "Colaboración cercana",
+        "description": "Trabajamos con personas que día a día deben tomar decisiones importantes, por eso creemos en relaciones cercanas y transparentes. Nos involucramos, escuchamos y caminamos junto a los equipos, compartiendo el proceso y las decisiones que dan forma a lo que se construye."
       }
     },
     "stats": {
-      "satisfaction": "Satisfacción del cliente",
-      "years": "Años de cuidado",
-      "lives": "Vidas mejoradas"
+      "satisfaction": "Comprometidos",
+      "years": "Tecnologías dominadas",
+      "lives": "Vidas transformadas"
     }
   },
   "process": {
-    "label": "Nuestro Proceso",
-    "headline": "Un enfoque gentil",
-    "headlineLight": "para resultados poderosos",
-    "description": "No creemos en plazos agresivos o complejidad abrumadora. Nuestro proceso está diseñado para sentirse natural, respetuoso de tu tiempo y enfocado en un cambio positivo duradero.",
+    "label": "¿Como lo hacemos?",
+    "headline": "¿Como lo hacemos?",
+    "headlineLight": "",
+    "description": "Diseñado para adaptarse a las personas, al contexto del negocio y al momento tecnológico en el que se encuentra cada empresa.",
     "cta": "Comienza tu Historia",
     "steps": {
       "step1": {
-        "title": "Escuchar y Entender",
-        "description": "Comenzamos entendiendo verdaderamente tus desafíos, tu equipo y tu visión para una mejor forma de trabajar."
+        "title": "Escuchar y comprender",
+        "description": "Antes de proponer, escuchamos. Entendemos el negocio, los desafíos reales, el equipo y las decisiones que ya se han tomado. Para construir soluciones óptimas."
       },
       "step2": {
-        "title": "Diseñar con Cuidado",
-        "description": "Las soluciones se crean con empatía, enfocándose en lo que realmente mejorará las experiencias diarias."
+        "title": "Dar claridad",
+        "description": "Analizamos escenarios, prioridades y riesgos para ayudar a tomar decisiones con criterio y confianza. No se trata de hacer más, sino de hacer lo correcto."
       },
       "step3": {
-        "title": "Construir con Consideración",
-        "description": "Desarrollamos con precisión y cuidado, asegurándonos de que cada detalle sirva a las personas que lo usarán."
+        "title": "Construir con intención",
+        "description": "Desarrollamos soluciones pensadas para durar. Cada sistema se construye con cuidado, estabilidad y visión de crecimiento, sin que comprometan el futuro del negocio."
       },
       "step4": {
-        "title": "Apoyar y Crecer",
-        "description": "Nuestra relación continúa como socios, ayudando a que tus soluciones evolucionen con tus necesidades."
+        "title": "Acompañar la evolución",
+        "description": "Nuestro trabajo no termina con la entrega. Seguimos acompañando a los equipos para que las soluciones evolucionen junto al negocio. Crecemos cuando nuestros clientes crecen."
       }
     }
   },
   "stories": {
     "label": "Historias",
-    "headline": "Personas reales,",
-    "headlineLight": "alivio real",
+    "headline": "Soluciones reales",
+    "headlineLight": "",
     "cta": "Leer Todas las Historias",
     "testimonials": {
       "testimonial1": {
@@ -109,10 +117,10 @@
     }
   },
   "insights": {
-    "label": "Perspectivas",
-    "headline": "Pensamientos sobre",
-    "headlineLight": "tecnología que cuida",
-    "cta": "Ver Todas las Perspectivas",
+    "label": "Blog",
+    "headline": "Información que nos ayuda a crecer",
+    "headlineLight": "",
+    "cta": "Ver más",
     "readMore": "Leer más",
     "articles": {
       "article1": {
@@ -139,40 +147,40 @@
     "label": "Lo que Creamos",
     "headline": "Automatización como",
     "headlineLight": "alivio",
-    "cta": "Explora Todas las Soluciones",
+    "cta": "Comienza a crecer",
     "items": {
       "wellbeing": {
-        "title": "Automatización para el Bienestar",
-        "description": "Sistemas que liberan a las personas de tareas repetitivas, dándoles tiempo para lo que realmente importa en sus vidas."
+        "title": "Automatización que libera",
+        "description": "Diseñamos sistemas que eliminan tareas repetitivas, procesos que antes requerían atención constante pasan a funcionar de forma fluida y confiable, liberando tiempo y energía para lo que realmente importa: pensar, decidir y hacer crecer el negocio."
       },
       "intelligent": {
-        "title": "Soluciones Inteligentes",
-        "description": "Tecnología inteligente que aprende y se adapta, trabajando siempre en segundo plano para servirte mejor."
+        "title": "Soluciones inteligentes",
+        "description": "Analizamos el contexto, los objetivos y el momento del negocio para recomendar soluciones que tengan sentido hoy y sigan funcionando mañana."
       },
       "trusted": {
-        "title": "Sistemas Confiables",
-        "description": "Plataformas seguras y confiables construidas con transparencia y cuidado por tus datos y tu tranquilidad."
+        "title": "Sistemas confiables",
+        "description": "Construimos soluciones pensadas para sostener el crecimiento sin poner en riesgo la operación. Cuidamos la estabilidad, la seguridad de la información y la previsibilidad de cada sistema, para que se tomen decisiones técnicas con confianza."
       },
       "team": {
-        "title": "Potenciación de Equipos",
-        "description": "Herramientas que unen a los equipos, fomentando la colaboración y la conexión humana genuina."
+        "title": "Potenciación de equipos",
+        "description": "Aportamos experiencia, criterio y claridad. Nos integramos como parte del equipo desde el primer día para que se sientan acompañados."
       }
     }
   },
   "cta": {
-    "headline": "¿Listo para tecnología",
-    "headlineLight": "que se siente como alivio?",
+    "headline": "¿Estás preparado para crecer?",
+    "headlineLight": "",
     "subtitle": "Tengamos una conversación tranquila sobre cómo podemos ayudar a tu equipo a recuperar su tiempo y enfocarse en lo que realmente importa.",
     "ctaPrimary": "Inicia una Conversación",
     "ctaSecondary": "contacto@dok7.io"
   },
   "floatingCTA": {
-    "headline": "Recupera tiempo para lo que importa",
-    "subtitle": "Automatiza procesos, simplifica operaciones y recupera tiempo valioso para enfocarte en lo que realmente importa.",
-    "benefit1": "Soluciones personalizadas para tu industria",
-    "benefit2": "Implementación rápida y sin fricciones",
-    "benefit3": "Soporte continuo y actualizaciones",
-    "cta": "Quiero una consulta gratuita"
+    "headline": "Construyamos el siguiente paso",
+    "subtitle": "Cuéntanos en qué punto está tu sistema y qué te gustaría mejorar.\nUna buena conversación puede darte la claridad que estás buscando.",
+    "benefit1": "Soluciones personalizadas",
+    "benefit2": "Implementación eficiente",
+    "benefit3": "Acompañamiento continuo",
+    "cta": "Conversemos"
   },
   "customDevelopment": {
     "label": "Soluciones de Software",
@@ -340,32 +348,14 @@
     }
   },
   "footer": {
-    "description": "Tecnología que trabaja en silencio para mejorar la vida de las personas. Automatización centrada en lo humano en la que puedes confiar.",
+    "description": "Tecnología con el poder de transformar vidas",
     "sections": {
-      "solutions": {
-        "title": "Soluciones",
-        "links": {
-          "wellbeing": "Automatización para el Bienestar",
-          "intelligent": "Sistemas Inteligentes",
-          "trusted": "Plataformas Confiables",
-          "team": "Potenciación de Equipos"
-        }
-      },
-      "company": {
-        "title": "Empresa",
-        "links": {
-          "about": "Nosotros",
-          "process": "Nuestro Proceso",
-          "stories": "Historias",
-          "careers": "Empleo"
-        }
-      },
       "resources": {
         "title": "Recursos",
         "links": {
-          "insights": "Perspectivas",
-          "cases": "Casos de Estudio",
-          "newsletter": "Boletín",
+          "home": "Inicio",
+          "services": "Servicios",
+          "about": "Nosotros",
           "contact": "Contacto"
         }
       },
@@ -376,14 +366,15 @@
           "privacy": "Política de Privacidad",
           "cookies": "Política de Cookies"
         }
+      },
+      "company": {
+        "title": "Empresa",
+        "address": "Avenida Blasco Ibañez 25, Valencia",
+        "email": "contacto@dok7.io",
+        "phone": "+ 34 674 32 71 81"
       }
     },
-    "copyright": "© 2026 DOK7 Software Solutions. Hecho con cuidado.",
-    "social": {
-      "linkedin": "LinkedIn",
-      "twitter": "Twitter",
-      "instagram": "Instagram"
-    }
+    "copyright": "Copyright @2024, Dok7 Todos los derechos reservados"
   }
 }
 

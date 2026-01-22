@@ -31,14 +31,14 @@ const Header = () => {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border/50">
-      <div className="container mx-auto px-6">
-        <div className="flex items-center justify-between h-20">
+      <div className="container mx-auto px-4 md:px-6">
+        <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-3">
+          <Link to="/" className="flex items-center gap-2 md:gap-3">
             <img 
               src={logoSrc} 
               alt={t('header.logo')}
-              className="h-10 w-auto transition-opacity duration-300"
+              className="h-8 md:h-10 w-auto transition-opacity duration-300"
             />
           </Link>
 
@@ -95,21 +95,21 @@ const Header = () => {
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="lg:hidden flex items-center gap-3">
+          <div className="lg:hidden flex items-center gap-2">
             <LanguageToggle />
             <button
-              className="p-2 text-foreground"
+              className="p-1.5 text-foreground"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
-              {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              {isMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
             </button>
           </div>
         </div>
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="lg:hidden py-8 border-t border-border">
-            <nav className="flex flex-col gap-4">
+          <div className="lg:hidden py-4 md:py-6 border-t border-border">
+            <nav className="flex flex-col gap-3 md:gap-4">
               {navItems.map((item) => (
                 item.isDropdown ? (
                   <div key={item.label} className="flex flex-col gap-2">
@@ -146,7 +146,7 @@ const Header = () => {
                   </a>
                 )
               ))}
-              <Button className="mt-4 bg-foreground text-background rounded-full">
+              <Button className="mt-3 md:mt-4 bg-foreground text-background rounded-full text-sm py-2">
                 {t('header.cta')}
               </Button>
             </nav>

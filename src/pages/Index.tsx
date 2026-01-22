@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import TechnologiesCarousel from "@/components/TechnologiesCarousel";
 import TransformSection from "@/components/TransformSection";
+import TransformSectionTimeline from "@/components/TransformSectionTimeline";
 import ServicesSection from "@/components/ServicesSection";
 import AIShowcase from "@/components/AIShowcase";
 import CaseStudySection from "@/components/CaseStudySection";
@@ -20,6 +21,7 @@ const Index = () => {
           <HeroSection />
           <TechnologiesCarousel />
           <TransformSection />
+          <TransformSectionTimeline />
         </div>
         
         {/* Sección 2 - Fondo Oscuro (Services + AIShowcase) */}

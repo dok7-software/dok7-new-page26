@@ -40,8 +40,8 @@ const ServicesSection = () => {
       
       <div className="container mx-auto px-6 relative z-10">
         {/* Section Header */}
-        <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 mb-16">
-          <div className="max-w-2xl">
+        <div className="flex flex-col items-center gap-8 mb-16">
+          <div className="max-w-2xl text-center">
             <p className="text-primary text-sm tracking-widest mb-6 uppercase">{t('services.label')}</p>
             <h2 className="font-display text-4xl md:text-5xl text-foreground mb-4">
               {t('services.headline')}
@@ -51,7 +51,7 @@ const ServicesSection = () => {
           </div>
           <Button 
             variant="outline" 
-            className="border-primary/40 text-primary hover:border-primary hover:bg-primary/10 hover:text-white rounded-full self-start lg:self-auto transition-all duration-300"
+            className="border-primary/40 text-primary hover:border-primary hover:bg-primary/10 hover:text-white rounded-full transition-all duration-300"
           >
             {t('services.cta')}
             <ArrowRight className="ml-2 w-4 h-4" />

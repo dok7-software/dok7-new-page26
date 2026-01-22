@@ -40,8 +40,12 @@ const AIShowcase = () => {
             <p className="text-primary text-sm tracking-widest mb-6 uppercase">{t('process.label')}</p>
             <h2 className="font-display text-4xl md:text-5xl text-foreground mb-6">
               {t('process.headline')}
-              <br />
-              <span className="font-display-light text-muted-foreground">{t('process.headlineLight')}</span>
+              {t('process.headlineLight') && (
+                <>
+                  <br />
+                  <span className="font-display-light text-muted-foreground">{t('process.headlineLight')}</span>
+                </>
+              )}
             </h2>
             <p className="text-lg text-muted-foreground mb-10 leading-relaxed">
               {t('process.description')}

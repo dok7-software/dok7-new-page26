@@ -4,13 +4,42 @@ const TechnologiesCarousel = () => {
   const [hoveredIndex, setHoveredIndex] = useState<string | null>(null);
   const [isPaused, setIsPaused] = useState(false);
 
-  // Generar array de imágenes de skills (skill1.png a skill35.png)
-  const skills = Array.from({ length: 35 }, (_, i) => {
-    const skillNumber = i + 1;
-    // skill27 es .jpg, el resto son .png
-    const extension = skillNumber === 27 ? 'jpg' : 'png';
-    return `/skills/skill${skillNumber}.${extension}`;
-  });
+  // Array de imágenes de skills disponibles (faltan skill6.png y skill11.png)
+  const skills = [
+    '/skills/skill1.png',
+    '/skills/skill2.png',
+    '/skills/skill3.png',
+    '/skills/skill4.png',
+    '/skills/skill5.png',
+    '/skills/skill7.png',
+    '/skills/skill8.png',
+    '/skills/skill9.png',
+    '/skills/skill10.png',
+    '/skills/skill12.png',
+    '/skills/skill13.png',
+    '/skills/skill14.png',
+    '/skills/skill15.png',
+    '/skills/skill16.png',
+    '/skills/skill17.png',
+    '/skills/skill18.png',
+    '/skills/skill19.png',
+    '/skills/skill20.png',
+    '/skills/skill21.png',
+    '/skills/skill22.png',
+    '/skills/skill23.png',
+    '/skills/skill24.png',
+    '/skills/skill25.png',
+    '/skills/skill26.png',
+    '/skills/skill27.jpg',
+    '/skills/skill28.png',
+    '/skills/skill29.png',
+    '/skills/skill30.png',
+    '/skills/skill31.png',
+    '/skills/skill32.png',
+    '/skills/skill33.png',
+    '/skills/skill34.png',
+    '/skills/skill35.png',
+  ];
 
   // Duplicar el array para crear efecto infinito
   const duplicatedSkills = [...skills, ...skills];
@@ -35,7 +64,7 @@ const TechnologiesCarousel = () => {
   return (
     <>
       <div 
-        className="w-full overflow-hidden py-12 mt-8 md:mt-16"
+        className="w-full overflow-hidden pt-12 mt-8 md:mt-16 mb-8 md:mb-16"
         onMouseEnter={handleCarouselMouseEnter}
         onMouseLeave={handleCarouselMouseLeave}
       >

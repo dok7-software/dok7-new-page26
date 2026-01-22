@@ -18,24 +18,13 @@ const CTASection = () => {
             <span className="text-3xl">💬</span>
           </div>
           
-          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl mb-6 text-foreground">
+          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl mb-12 text-foreground">
             {t('cta.headline')}
             <br />
             <span className="font-display-light text-muted-foreground">{t('cta.headlineLight')}</span>
           </h2>
-          <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed">
-            {t('cta.subtitle')}
-          </p>
           
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button 
-              size="lg" 
-              className="bg-foreground text-background hover:bg-foreground/90 rounded-full px-10 py-6"
-              onClick={() => window.open('https://wa.me/34695384318', '_blank')}
-            >
-              {t('cta.ctaPrimary')}
-              <ArrowRight className="ml-2 w-5 h-5" />
-            </Button>
+          <div className="flex items-center justify-center">
             <Button 
               size="lg" 
               variant="outline"
