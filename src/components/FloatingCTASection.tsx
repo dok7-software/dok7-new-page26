@@ -1,12 +1,12 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Clock } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
 const FloatingCTASection = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="pb-4 md:pb-6 relative">
+    <section className="pb-8 md:pb-12 lg:pb-16 relative">
       <div className="container mx-auto px-6">
         <div className="relative">
           {/* Background dividido: Mitad oscuro arriba, mitad claro abajo */}
@@ -18,22 +18,13 @@ const FloatingCTASection = () => {
           {/* Extensión del fondo claro hacia abajo */}
           <div className="absolute top-full left-1/2 right-1/2 -mx-[50vw] w-screen h-12 md:h-16 lg:h-20 xl:h-24 bg-section-light pointer-events-none" style={{ backgroundColor: 'hsl(40 30% 97%)' }} />
           
-          <div className="max-w-4xl mx-auto relative z-10">
+          <div className="max-w-6xl mx-auto relative z-10">
             {/* Contenedor blanco elevado con el contenido */}
-            <div className="bg-white rounded-3xl shadow-2xl border-2 border-gray-200 p-6 md:p-8 lg:p-10 relative overflow-hidden">
-              
-              {/* Decorative gradient background */}
-              <div className="absolute top-0 right-0 w-[300px] h-[300px] rounded-full bg-gradient-to-br from-accent/20 via-secondary/15 to-primary/20 blur-[100px] pointer-events-none" />
-              <div className="absolute bottom-0 left-0 w-[250px] h-[250px] rounded-full bg-gradient-to-tr from-primary/15 via-accent/10 to-secondary/15 blur-[80px] pointer-events-none" />
+            <div className="bg-white rounded-3xl shadow-2xl border-2 border-gray-200 py-8 px-12 md:py-12 md:px-20 lg:py-16 lg:px-32 xl:py-20 xl:px-40 relative overflow-hidden">
               
               {/* Contenido */}
-              <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center relative z-10">
+              <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center relative z-10">
                 <div>
-                  {/* Icon decorativo */}
-                  <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-accent via-secondary to-primary mb-5">
-                    <Clock className="w-8 h-8 text-white" />
-                  </div>
-                  
                   <h2 className="text-[#182547] text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight">
                     {t('floatingCTA.headline')}
                   </h2>
@@ -42,7 +33,7 @@ const FloatingCTASection = () => {
                   </p>
                 </div>
                 
-                <div className="space-y-5">
+                <div className="space-y-5 lg:ml-8 xl:ml-12">
                   {/* Benefits list */}
                   {[
                     t('floatingCTA.benefit1'),
