@@ -137,9 +137,9 @@
   },
   "services": {
     "label": "What We Create",
-    "headline": "Automation as",
-    "headlineLight": "relief",
-    "cta": "Start Growing",
+    "headline": "What We Create",
+    "headlineLight": "",
+    "cta": "Explore All Solutions",
     "items": {
       "wellbeing": {
         "title": "Automation that liberates",

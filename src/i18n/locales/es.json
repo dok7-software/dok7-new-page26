@@ -145,9 +145,9 @@
   },
   "services": {
     "label": "Lo que Creamos",
-    "headline": "Automatización como",
-    "headlineLight": "alivio",
-    "cta": "Comienza a crecer",
+    "headline": "Lo que creamos",
+    "headlineLight": "",
+    "cta": "Explora todas las soluciones",
     "items": {
       "wellbeing": {
         "title": "Automatización que libera",
